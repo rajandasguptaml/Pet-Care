@@ -171,7 +171,9 @@ html {
                     <span><?php echo $err_password; ?></span></td>
                 </tr>
 
-               
+               <tr>
+						<td align="center" colspan="2"><input type="submit" name="submit" value="Register"></td>
+				</tr>
             </table>
         </form>
 		
