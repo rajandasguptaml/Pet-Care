@@ -161,32 +161,32 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.Freeze-Dried Mini Nibs For Cats</h5> </td>
-					<td><a class="but">EDIT</a> </td>
+					<td><p><a href="proadd.php" class="but">EDIT</a> </td></p>
 					<td><a class="but">DELETE</a> </td>
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><a class="but">EDIT</a> </td>
+					<td><p><a href="proadd.php" class="but">EDIT</a> </td></p>
 					<td><a class="but">DELETE</a> </td>
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><a class="but">EDIT</a> </td>
+					<td><p><a href="proadd.php" class="but">EDIT</a> </td></p>
 					<td><a class="but">DELETE</a> </td>
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.Freeze Dried Chicken Littles </h5> </td>
-					<td><a class="but">EDIT</a> </td>
+					<td><p><a href="proadd.php" class="but">EDIT</a> </td></p>
 					<td><a class="but">DELETE</a> </td>
 				</tr> 
 			</table>
         
 		</div>
         
-        <p><a class="a">ADD NEW</a></p>
+        <p><a href="pronew.php" class="a"> ADD NEW</a></p>
       </div>
     </div>
   </div>
@@ -202,32 +202,34 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.BLOG-1</h5> </td>
-					<td><a class="but">EDIT</a> </td>
-					<td><a class="but">DELETE</a> </td>
+					<td><p><a href="blogedit.php" class="but">EDIT</a> </td></p>
+					<td><a href="blogedit.php"class="but">DELETE</a> </td>
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.BLOG-2</h5> </td>
-					<td><a class="but">EDIT</a> </td>
+					<td><p><a href="blogedit.php" class="but">EDIT</a> </td></p>
 					<td><a class="but">DELETE</a> </td>
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.BLOG-3</h5> </td>
-					<td><a class="but">EDIT</a> </td>
+					<td><p><a href="blogedit.php" class="but">EDIT</a> </td></p>
 					<td><a class="but">DELETE</a> </td>
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.BLOG-4 </h5> </td>
-					<td><a class="but">EDIT</a> </td>
-					<td><a class="but">DELETE</a> </td>
+					<td><p><a href="blogedit.php" class="but">EDIT</a> </td></p>
+					<td><a class="but"> DELETE</a> </td>
 				</tr> 
 			</table>
         
 		</div>
+		
+		
         
-        <p><a class="a">ADD NEW</a></p>
+        <p><a href="blogedit.php" class="a">ADD NEW</a></p>
       </div>
     </div>
   </div>
