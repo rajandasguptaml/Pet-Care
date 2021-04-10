@@ -14,11 +14,12 @@ html {
 
 .column {
   float: left;
-  width: 50%;
+  width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
   
   padding-top:100px:
+  padding-bottom:10px:
   
 }
 
@@ -102,7 +103,7 @@ html {
 
 <div id="dash"></div>
 <div class="dash-section">
-  <h1>DASHBOARD</h1> 
+  <h1>ADMIN DASHBOARD</h1> 
 </div>
 
 
@@ -131,13 +132,142 @@ html {
 				</tr> 
 
 				<tr>
-					<td> <h5>2.Jui,Saha Pritha</h5> </td>
+					<td> <h5>3.Rabeya Bosri Sonia</h5> </td>
 					<td><p><a href="updatebio.php" class="but">EDIT</a> </td></p>
 					<td><a href="" class="but">DELETE</a> </td>
 				</tr> 
 
 				<tr>
 					<td> <h5>4.Rajan Das Gupta </h5> </td>
+					<td><a href="updatebio.php" class="but">EDIT</a> </td>
+					<td><a href="" class="but">DELETE</a> </td>
+				</tr> 
+			</table>
+        
+		</div>
+		
+        <p> <a href="addnew.php" class="a"> ADD NEW </a> </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>DOCTOR</h2>
+        <p class="title"></p>
+		
+		<div class="name">
+		
+			<table> 
+				<tr>
+					<td> <h5>1.Dr.</h5> </td>
+					<td><a href="updatebio.php" class="but">EDIT</a> </td>
+					<td><a href="#"  class="but">DELETE</a> </td>
+				</tr> 
+
+				<tr>
+					<td> <h5>2.Dr.</h5> </td>
+					<td><a href="updatebio.php" class="but">EDIT</a> </td>
+					<td><a href="" class="but">DELETE</a> </td>
+				</tr> 
+
+				<tr>
+					<td> <h5>3.Dr.</h5> </td>
+					<td><p><a href="updatebio.php" class="but">EDIT</a> </td></p>
+					<td><a href="" class="but">DELETE</a> </td>
+				</tr> 
+
+				<tr>
+					<td> <h5>4.Dr. </h5> </td>
+					<td><a href="updatebio.php" class="but">EDIT</a> </td>
+					<td><a href="" class="but">DELETE</a> </td>
+				</tr> 
+			</table>
+        
+		</div>
+		
+        <p> <a href="addnew.php" class="a"> ADD NEW </a> </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>EDITOR</h2>
+        <p class="title"></p>
+		
+		<div class="name">
+		
+			<table> 
+				<tr>
+					<td> <h5>1.Mr.</h5> </td>
+					<td><a href="updatebio.php" class="but">EDIT</a> </td>
+					<td><a href="#"  class="but">DELETE</a> </td>
+				</tr> 
+
+				<tr>
+					<td> <h5>2.Mr.</h5> </td>
+					<td><a href="updatebio.php" class="but">EDIT</a> </td>
+					<td><a href="" class="but">DELETE</a> </td>
+				</tr> 
+
+				<tr>
+					<td> <h5>3.Mr.</h5> </td>
+					<td><p><a href="updatebio.php" class="but">EDIT</a> </td></p>
+					<td><a href="" class="but">DELETE</a> </td>
+				</tr> 
+
+				<tr>
+					<td> <h5>4. Mr. </h5> </td>
+					<td><a href="updatebio.php" class="but">EDIT</a> </td>
+					<td><a href="" class="but">DELETE</a> </td>
+				</tr> 
+			</table>
+        
+		</div>
+		
+        <p> <a href="addnew.php" class="a"> ADD NEW </a> </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+ <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>USER</h2>
+        <p class="title"></p>
+		
+		<div class="name">
+		
+			<table> 
+				<tr>
+					<td> <h5>1.Mr.</h5> </td>
+					<td><a href="updatebio.php" class="but">EDIT</a> </td>
+					<td><a href="#"  class="but">DELETE</a> </td>
+				</tr> 
+
+				<tr>
+					<td> <h5>2.Mr.</h5> </td>
+					<td><a href="updatebio.php" class="but">EDIT</a> </td>
+					<td><a href="" class="but">DELETE</a> </td>
+				</tr> 
+
+				<tr>
+					<td> <h5>3.Mr.</h5> </td>
+					<td><p><a href="updatebio.php" class="but">EDIT</a> </td></p>
+					<td><a href="" class="but">DELETE</a> </td>
+				</tr> 
+
+				<tr>
+					<td> <h5>4. Mr. </h5> </td>
 					<td><a href="updatebio.php" class="but">EDIT</a> </td>
 					<td><a href="" class="but">DELETE</a> </td>
 				</tr> 
@@ -172,7 +302,7 @@ html {
 				</tr> 
 			
 				<tr>
-					<td> <h5>2.Omega-Gold Plus Salmon Oil</h5> </td>
+					<td> <h5>3.Omega-Gold Plus Salmon Oil</h5> </td>
 					<td><p><a href="proadd.php" class="but">EDIT</a> </td></p>
 					<td><a class="but">DELETE</a> </td>
 				</tr> 
@@ -213,7 +343,7 @@ html {
 				</tr> 
 			
 				<tr>
-					<td> <h5>2.BLOG-3</h5> </td>
+					<td> <h5>3.BLOG-3</h5> </td>
 					<td><p><a href="blogedit.php" class="but">EDIT</a> </td></p>
 					<td><a class="but">DELETE</a> </td>
 				</tr> 
@@ -225,11 +355,8 @@ html {
 				</tr> 
 			</table>
         
-		</div>
-		
-		
-        
-        <p><a href="blogedit.php" class="a">ADD NEW</a></p>
+		</div>     
+        <p><a href="blognew.php" class="a">ADD NEW</a></p>
       </div>
     </div>
   </div>
