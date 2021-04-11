@@ -284,13 +284,6 @@ html {
                 $zip=$_POST["zip"];
             }
 
-
-            
-           
-
-
-           
-
             if(empty($_POST["gender"])){
 				$err_gender="****Please select gender";
 			}
@@ -315,7 +308,6 @@ html {
         }
     ?>
     
-    <fieldset>
       
         <form action="" method="post">
             <table>
@@ -352,11 +344,7 @@ html {
                             <span> <?php echo $err_bmonth;?> </span>
                             
                 </tr>
-                
-				
-				
-
-                
+               
                 <tr>
 						<td><span>Blog Content </span></td>
 						<td>:<textarea name="bio"></textarea>
@@ -371,8 +359,7 @@ html {
 
             </table>
         </form>
-        
-    </fieldset>
+  
    </div>
     </div>
   </div>

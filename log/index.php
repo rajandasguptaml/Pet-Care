@@ -72,7 +72,7 @@ html {
   border: none;
   outline: 0;
   display: inline-block; 
-  padding: 10px;
+  padding: 2px;
   color: white;
   background-color: #474e5d;
   text-align: center;
@@ -107,33 +107,44 @@ html {
       <div class="container">
 	  <div class= "single">
 	  
-	  <html>
-
-<body>
-
-<button class="button button1"><a href=".\log\index.php"> <b>LOG IN</b></a></button>
-<button class="button button1"><a href="dashuser.php"> <b>USER</b></a></button>
-<button class="button button2"><a href="dashboard.php"> <b>ADMIN</b> </a> </button>
-<button class="button button3"><a href="dashdoctor.php"> <b>DOCTOR</b></a></button>
-<button class="button button4"><a href="dasheditor.php"> <b>EDITOR</b></a></button>
-
-
-
-</body>
-</html>
-
-	
 	  
-	    </div>
-    
-	
-   </div>
-    </div>
-  </div>
+</html>
+
+<?php  
+if (!isset($username)) {
+    $username='';
+} ?>
+<html>
+<head>
+
+</head>
+<body>
+<div class="container">
 </div>
+<form action="result.php" method="Post">
+
+<input placeholder="Username" type="text" name="user_name">
+ <br/>
+<?php if(isset($name_error)){ ?>
+<p> <?php echo $name_error ?> </p>
+<?php } ?>
+
+
+<input  placeholder="Password" type="password" name="user_password"> <br/>
+
+<?php if(isset($password_error)){ ?>
+<p> <?php echo $password_error ?> </p>
+<?php } ?>
+
+<input class="button" type="Submit" value= "log in">
+</br>
+
+	 <p><button class="button"><a href="signup.php"> SIGN UP </a></button></p>
+</form>
+
+
 
 
 </body>
 </html>
-
 

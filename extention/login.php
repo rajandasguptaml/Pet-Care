@@ -74,7 +74,7 @@ html {
   display: inline-block; 
   padding: 2px;
   color: white;
-  background-color: #000;
+  background-color: #474e5d;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -157,10 +157,31 @@ html {
             
         }
   
-      
+       if($_SERVER['REQUEST_METHOD']=='POST'){
+            
+            if(empty($_POST["uname"])){
+                $err_uname="*Username Required";
+            }
+     
+            }
+            else{ 
+			$uname=$_POST["uname"];
+            }
+            
+			
+            if(empty($_POST["pass"])){
+                $err_password = "*Password Required";
+                
+            }
+			
+            else{
+                $password=$_POST["pass"];
+            }
+		
+
     ?>
     
-    <fieldset>
+
         <legend><h3></h3></legend>
         <form action="" method="post">
             <table>
@@ -181,15 +202,13 @@ html {
             </table>
         </form>
 		
-        	   <p><button class="button"><a href="project.html"> LOG IN </a> </button></p>
+        	   <td align="center" colspan="2"><input type="submit" name="submit" value="SIGN IN"></td>
 			
     </fieldset>
 	  
 	   
 	 <p><button class="button"><a href="signup.php"> SIGN UP </a></button></p>
-	    
-	
-	  
+  
 	    </div>
     
 	
@@ -197,7 +216,6 @@ html {
     </div>
   </div>
 </div>
-
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>Update Information</title>
+    <title>Update Editor Information</title>
 </head>
 <body>
 <style>
@@ -334,7 +334,7 @@ html {
         }
     ?>
     
-    <fieldset>
+
         <form action="" method="post">
             <table>
                 <tr>
@@ -449,7 +449,7 @@ html {
             </table>
         </form>
         
-    </fieldset>
+
    </div>
     </div>
   </div>

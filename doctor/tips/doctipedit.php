@@ -314,13 +314,11 @@ html {
            
         }
     ?>
-    
-    <fieldset>
-      
+
         <form action="" method="post">
             <table>
                 <tr>
-                    <td><Span>Blog Intro</Span></td>
+                    <td><Span>Tips Intro</Span></td>
                     <td>: <input type="text" placeholder="Name" value=" <?php echo $name; ?> " name="name"> 
                     <span><?php echo $err_name; ?></span></td>
                 </tr>
@@ -353,12 +351,9 @@ html {
                             
                 </tr>
                 
-				
-				
-
                 
                 <tr>
-						<td><span>Blog Content </span></td>
+						<td><span>Tips Content </span></td>
 						<td>:<textarea name="bio"></textarea>
                         <span> <?php  echo $err_bio  ?> </span>
                         </td>
@@ -371,8 +366,6 @@ html {
 
             </table>
         </form>
-        
-    </fieldset>
    </div>
     </div>
   </div>

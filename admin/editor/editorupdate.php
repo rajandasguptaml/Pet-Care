@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>NEW USER REGISTRATION</title>
+    <title>Update Editor Information</title>
 </head>
 <body>
 <style>
@@ -79,7 +79,7 @@ html {
 </style>
 <div id="signup"></div>
 <div class="signup-section">
-  <h1> NEW ADMIN REGISTRATION</h1>
+  <h1>   UPDATE INFORMATION</h1>
   <p></p>
   <p></p>
 </div>
@@ -334,7 +334,7 @@ html {
         }
     ?>
     
-
+    <fieldset>
         <form action="" method="post">
             <table>
                 <tr>
@@ -440,10 +440,8 @@ html {
 				</tr>
 
                 
-
-              
 					<tr>
-						<td align="center" colspan="2"><input type="submit" name="submit" value="REGISTER"></td>
+						<td align="center" colspan="2"><input type="submit" name="submit" value="UPDATE"></td>
 				</tr>
 
 
@@ -451,7 +449,7 @@ html {
             </table>
         </form>
         
-
+    </fieldset>
    </div>
     </div>
   </div>

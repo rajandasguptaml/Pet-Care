@@ -161,11 +161,7 @@ html {
             return false;
             
             
-            
         }
-   
-
-      
 
         if($_SERVER['REQUEST_METHOD']=='POST'){
             
@@ -285,12 +281,6 @@ html {
             }
 
 
-            
-           
-
-
-           
-
             if(empty($_POST["gender"])){
 				$err_gender="****Please select gender";
 			}
@@ -314,18 +304,16 @@ html {
            
         }
     ?>
-    
-    <fieldset>
-      
+ 
         <form action="" method="post">
             <table>
                 <tr>
-                    <td><Span>Product Name</Span></td>
+                    <td><Span>Medicine Name</Span></td>
                     <td>: <input type="text" placeholder="Name" value=" <?php echo $name; ?> " name="name"> 
                     <span><?php echo $err_name; ?></span></td>
                 </tr>
                 <tr>
-                    <td><span>Product ID</span></td>
+                    <td><span>Medicine ID</span></td>
                     <td>: <input type="text" placeholder="Username" value=" <?php echo $uname; ?>" name="uname"> 
                     <span><?php echo $err_uname; ?></span></td></td>
                 </tr>
@@ -363,12 +351,9 @@ html {
                             
                 </tr>
                 
-				
-				
-
-                
+		
                 <tr>
-						<td><span>Product Details </span></td>
+						<td><span>Medicine Details </span></td>
 						<td>:<textarea name="bio"></textarea>
                         <span> <?php  echo $err_bio  ?> </span>
                         </td>
@@ -381,8 +366,7 @@ html {
 
             </table>
         </form>
-        
-    </fieldset>
+ 
    </div>
     </div>
   </div>

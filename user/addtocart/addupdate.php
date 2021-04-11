@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>NEW USER REGISTRATION</title>
+    <title>UPDATE YOUR CART </title>
 </head>
 <body>
 <style>
@@ -19,7 +20,7 @@ html {
 
 .column {
   float: left;
-  width: 100%;
+  width: 50%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -39,15 +40,12 @@ html {
 
 .container {
   padding: 0 16px;
-  text-align: center;
-  margin-left:
 }
 
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
-    text-align: center;
 }
 
 .title {
@@ -79,7 +77,7 @@ html {
 </style>
 <div id="signup"></div>
 <div class="signup-section">
-  <h1> NEW ADMIN REGISTRATION</h1>
+  <h1>UPDATE YOUR CART </h1>
   <p></p>
   <p></p>
 </div>
@@ -172,11 +170,11 @@ html {
         if($_SERVER['REQUEST_METHOD']=='POST'){
             
             if(empty($_POST["uname"])){
-                $err_uname="*Username Required";
+                $err_uname="*Name Required";
                 
             }
             else if(strlen($_POST["uname"]) <6){
-                $err_uname="*Username should be at least 6 characters";
+                $err_uname="*INVALID";
                 ;
             }
             else{
@@ -287,26 +285,9 @@ html {
             }
 
 
-            if(($_POST["day"])=="Day"){
-				$err_bday="*Please select Day";
-			}
-            else{
-                $bday=$_POST["day"];
-            }
+            
+           
 
-            if(($_POST["month"])=="Month"){
-				$err_bmonth="*Please select Month";
-			}
-            else{
-                $bmonth=$_POST["month"];
-            }
-
-            if(($_POST["year"])=="Year"){
-				$err_byear="*Please select Year";
-			}
-            else{
-                $byear=$_POST["year"];
-            }
 
            
 
@@ -325,7 +306,7 @@ html {
             }
 
             if(empty($_POST["bio"])){
-                $err_bio="*Bio text area must be filled";
+                $err_bio="*Details text area must be filled";
             }
             else{
                 $bio=$_POST["bio"];
@@ -333,124 +314,65 @@ html {
            
         }
     ?>
-    
 
         <form action="" method="post">
             <table>
                 <tr>
-                    <td><Span>Name</Span></td>
+                    <td><Span>User Name</Span></td>
                     <td>: <input type="text" placeholder="Name" value=" <?php echo $name; ?> " name="name"> 
                     <span><?php echo $err_name; ?></span></td>
                 </tr>
                 <tr>
-                    <td><span>Username</span></td>
+                    <td><span>Product ID</span></td>
                     <td>: <input type="text" placeholder="Username" value=" <?php echo $uname; ?>" name="uname"> 
                     <span><?php echo $err_uname; ?></span></td></td>
                 </tr>
-
-                <tr>
-                    <td><span>Password</span></td>
-                    <td>: <input type="password" placeholder="Password" value="<?php echo $password; ?>" name="pass"> 
-                    <span><?php echo $err_password; ?></span></td>
+				
+				<tr>
+                    <td><span>Address</span></td>
+                    <td>: <input type="text" placeholder="Username" value=" <?php echo $uname; ?>" name="uname"> 
+                    <span><?php echo $err_uname; ?></span></td></td>
                 </tr>
-
-                <tr>
-                    <td><span>Confirm Password</span></td>
-                    <td>: <input type="password" placeholder="Confirm Password" value="<?php echo $conpassword; ?>" name="cpass">
-                    <span><?php echo $err_conpassword; ?></span></td>
+				
+				<tr>
+                    <td><span>Phone</span></td>
+                    <td>: <input type="text" placeholder="Username" value=" <?php echo $uname; ?>" name="uname"> 
+                    <span><?php echo $err_uname; ?></span></td></td>
                 </tr>
-
-                <tr>
-                <td><span>Email</span></td>
-                    <td>: <input type="text" placeholder="Email" value="<?php echo $email; ?>" name="email"> 
-                    <span><?php echo $err_email; ?></span></td>
-                </tr>
-
-                <tr>
-                <td><span>Phone Number</span></td>
-                    <td>: <input type="text" placeholder="Phone Number" value="<?php echo $phone; ?>" name="phonenumber">
-                    <span><?php echo $err_phone; ?></span> </td>
-                </tr>
-                
-                <tr>
-                    <td rowspan="4"><span>Address</span></td>
-                    <td>: <input type="text" placeholder="Street Address" value="<?php echo $street; ?>" name="street"> 
-                    <span><?php echo $err_street; ?></span></td>
-                </tr>
-
-                <tr>
-                    <td>: <input type="text" placeholder="City" value="<?php echo $city; ?>" name="city">
-                    <span><?php echo $err_city; ?></span></td>
-                    
-                    
-                </tr>
-                <tr>
-                    <td>: <input type="text" placeholder="State" value="<?php echo $state; ?>" name="state">
-                    <span><?php echo $err_state; ?></span></td>
-                
-                </tr>
-
-                <tr>
-                    <td>: <input type="text" placeholder="Postal/zip code" value="<?php echo $zip; ?>" name="zip"> 
-                    <span><?php echo $err_zip; ?></span></td>
-                </tr>
-
-                <tr>
-                <td>Birth Date</td>
+				
+				<tr>
+                <td>Catagory</td>
 						<td>:
-							<select name="day" value="<?php echo $day;?>">
-								<option>Day</option>
-								
-								<?php
-									for($i=1;$i<=31;$i++){
-										echo "<option>$i</option>";	
-									}
-								?>
+							
 							</select>
 							<select name="month" value ="<?php echo $bmonth?>">
-								<option>Month</option>
+								<option>Payment Method</option>
 								
 								<?php
-								    $month = array("January","February","March","April","May","June","July","August","September","October","November","December");
+								    $month = array("","Bkash","Roket","Nagad","Card");
 									foreach($month as $v){
 										echo "<option>$v</option>";
 										
 									}
 								?>
 							</select>
-                            <select name="year" value ="<?php echo $byear?>">
-								<option>Year</option>
-								
-								<?php
-									for($i=1970;$i<=2021;$i++){
-										echo "<option>$i</option>";	
-									}
-								?>
-							</select>
-                            <span> <?php echo $err_bday;?> </span>
+                            
                             <span> <?php echo $err_bmonth;?> </span>
-                            <span> <?php echo $err_byear;?> </span>
-						</td>
+                            
                 </tr>
-                
-                <tr>
-						<td><span>Gender</span></td>
-						<td>:<input type="radio" value="Male" name="gender">Male<input type="radio" value="Female" name="gender">Female
-                        <span> <?php echo $err_gender;?> </span></td>
-				</tr>
-
-                
-
               
+                <tr>
+						<td><span>Instruction </span></td>
+						<td>:<textarea name="bio"></textarea>
+                        <span> <?php  echo $err_bio  ?> </span>
+                        </td>
+					</tr>
 					<tr>
-						<td align="center" colspan="2"><input type="submit" name="submit" value="REGISTER"></td>
+						<td align="center" colspan="2"><input type="submit" name="submit" value="SUBMIT"></td>
 				</tr>
-
-
 
             </table>
         </form>
-        
 
    </div>
     </div>

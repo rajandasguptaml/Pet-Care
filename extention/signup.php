@@ -1,12 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>NEW USER REGISTRATION</title>
+    <title> Sign Up</title>
 </head>
 <body>
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  margin left: 550px;
 }
 
 html {
@@ -20,17 +21,19 @@ html {
 .column {
   float: left;
   width: 100%;
+ 
   margin-bottom: 16px;
   padding: 0 8px;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+  margin left: 50px;
+
 }
 
 .signup-section {
-  padding: 50px;
+ padding: 50px;
   text-align: center;
   background-color: #474e5d;
   color: white;
@@ -38,16 +41,24 @@ html {
 }
 
 .container {
-  padding: 0 16px;
-  text-align: center;
-  margin-left:
+  padding: 0px 100px 50px 300px; 
+
+  
+  
+}
+.single{
+	
+	float:left;
+	 padding: 0px 100px 50px 100px; 
 }
 
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
-    text-align: center;
+  margin-left: 500px;
+  
+
 }
 
 .title {
@@ -79,7 +90,7 @@ html {
 </style>
 <div id="signup"></div>
 <div class="signup-section">
-  <h1> NEW ADMIN REGISTRATION</h1>
+  <h1> SIGN UP</h1>
   <p></p>
   <p></p>
 </div>
@@ -89,7 +100,8 @@ html {
     <div class="card">
    
       <div class="container">
-    <?php
+	  <div class= "single">
+	  <?php
         $name="";
         $err_name="";
         $uname="";
@@ -334,7 +346,7 @@ html {
         }
     ?>
     
-
+    
         <form action="" method="post">
             <table>
                 <tr>
@@ -439,19 +451,34 @@ html {
                         <span> <?php echo $err_gender;?> </span></td>
 				</tr>
 
-                
+                <tr>
+						<td><span>Where did you hear about us?</span></td>
+						<td>:<input type="checkbox" value="A friend or colleague" name="aboutus[]">A friend or colleague 
+							 <input type="checkbox" value="Google" name="aboutus[]">Google 
+							 <input type="checkbox" value="Blog Post" name="aboutus[]">Blog Post
+                             <input type="checkbox" value="News Article" name="aboutus[]">News Article
+                             <span> <?php  echo $err_aboutus ?> </span>
+                        </td>
+					</tr>
 
-              
+                <tr>
+						<td><span>Bio </span></td>
+						<td>:<textarea name="bio"></textarea>
+                        <span> <?php  echo $err_bio  ?> </span>
+                        </td>
+					</tr>
 					<tr>
-						<td align="center" colspan="2"><input type="submit" name="submit" value="REGISTER"></td>
+						<td align="center" colspan="2"><input type="submit" name="submit" value="Register"></td>
 				</tr>
 
 
 
             </table>
         </form>
-        
-
+  
+	  </div
+    
+	
    </div>
     </div>
   </div>

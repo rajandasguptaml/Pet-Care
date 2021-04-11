@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CREATE NEW BLOG</title>
+    <title>CREATE NEW NEWS</title>
 </head>
 <body>
 <style>
@@ -77,7 +77,7 @@ html {
 </style>
 <div id="signup"></div>
 <div class="signup-section">
-  <h1>CREATE NEW BLOG </h1>
+  <h1>CREATE NEW NEWS </h1>
   <p></p>
   <p></p>
 </div>
@@ -315,12 +315,11 @@ html {
         }
     ?>
     
-    <fieldset>
-      
+
         <form action="" method="post">
             <table>
                 <tr>
-                    <td><Span>Blog Intro</Span></td>
+                    <td><Span>News Intro</Span></td>
                     <td>: <input type="text" placeholder="Name" value=" <?php echo $name; ?> " name="name"> 
                     <span><?php echo $err_name; ?></span></td>
                 </tr>
@@ -358,7 +357,7 @@ html {
 
                 
                 <tr>
-						<td><span>Blog Content </span></td>
+						<td><span>News Content </span></td>
 						<td>:<textarea name="bio"></textarea>
                         <span> <?php  echo $err_bio  ?> </span>
                         </td>
@@ -371,8 +370,7 @@ html {
 
             </table>
         </form>
-        
-    </fieldset>
+  
    </div>
     </div>
   </div>

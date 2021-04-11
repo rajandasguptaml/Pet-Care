@@ -60,8 +60,6 @@ html {
   
 }
 
-
-
 .a {
   border: none;
   outline: 0;
@@ -103,7 +101,7 @@ html {
 
 <div id="dash"></div>
 <div class="dash-section">
-  <h1>EDITOR DASHBOARD</h1> 
+  <h1>USER DASHBOARD</h1> 
 </div>
 
 
@@ -111,125 +109,129 @@ html {
 
 <div class="blogr">
   
-  
-  <div class="column">
-    <div class="card">
-      <div class="container">
-        <h2>BLOG</h2>
-        <p class="title"></p>
-		<div class="name">
-		
-			<table> 
-				<tr>
-					<td> <h5>1.BLOG-1</h5> </td>
-					<td><p><a href=".\editor\blog\blogedit.php" class="but">EDIT</a> </td></p>
-				
-				</tr> 
-			
-				<tr>
-					<td> <h5>2.BLOG-2</h5> </td>
-					<td><p><a href=".\editor\blog\blogedit.php" class="but">EDIT</a> </td></p>
-			
-				</tr> 
-			
-				<tr>
-					<td> <h5>3.BLOG-3</h5> </td>
-					<td><p><a href=".\editor\blog\blogedit.php" class="but">EDIT</a> </td></p>
-					
-				</tr> 
-			
-				<tr>
-					<td> <h5>4.BLOG-4 </h5> </td>
-					<td><p><a href=".\editor\blog\blogedit.php" class="but">EDIT</a> </td></p>
-					
-				</tr> 
-			</table>
-        
-		</div>     
-        <p><a href=".\editor\blog\blognew.php" class="a">ADD NEW</a></p>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="column">
-    <div class="card">
-      <div class="container">
-        <h2>NEWS</h2>
-        <p class="title"></p>
-		<div class="name">
-		
-			<table> 
-				<tr>
-					<td> <h5>1.NEWS-1</h5> </td>
-					<td><p><a href=".\editor\news\newsedit.php" class="but">EDIT</a> </td></p>
 
-				</tr> 
-			
-				<tr>
-					<td> <h5>2.NEWS-2</h5> </td>
-					<td><p><a href=".\editor\news\newsedit.php" class="but">EDIT</a> </td></p>
-					
-				</tr> 
-			
-				<tr>
-					<td> <h5>3.NEWS-3</h5> </td>
-					<td><p><a href=".\editor\news\newsedit.php" class="but">EDIT</a> </td></p>
-					
-				</tr> 
-			
-				<tr>
-					<td> <h5>4.NEWS-4 </h5> </td>
-					<td><p><a href=".\editor\news\newsedit.php" class="but">EDIT</a> </td></p>
-					
-				</tr> 
-			</table>
-        
-		</div>     
-        <p><a href=".\editor\news\newsnew.php" class="a">ADD NEW</a></p>
-      </div>
-    </div>
-  </div>
-  
   <div class="column">
     <div class="card">
       <div class="container">
-        <h2>PRODUCT</h2>
+        <h2>PRODUCT & PETS</h2>
         <p class="title"></p>
 		<div class="name">
 		
 			<table> 
 				<tr>
 					<td> <h5>1.Freeze-Dried Mini Nibs For Cats</h5> </td>
-					<td><p><a href=".\editor\product\proadd.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\user\product\proadd.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><p><a href=".\editor\product\proadd.php" class="but">EDIT</a> </td></p>
-				
+					<td><p><a href=".\user\product\proadd.php" class="but">EDIT</a> </td></p>
+					
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><p><a href=".\editor\product\proadd.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\user\product\proadd.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.Freeze Dried Chicken Littles </h5> </td>
-					<td><p><a href=".\editor\product\proadd.php" class="but">EDIT</a> </td></p>
-					
+					<td><p><a href=".\user\product\proadd.php" class="but">EDIT</a> </td></p>
+				
 				</tr> 
 			</table>
         
 		</div>
         
-        <p><a href=".\editor\product\pronew.php" class="a"> ADD NEW</a></p>
+        <p><a href=".\user\product\proadd.php" class="a"> ADD NEW</a></p>
       </div>
     </div>
   </div>
+  
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>BLOG & TIPS</h2>
+        <p class="title"></p>
+		<div class="name">
+		
+			<table> 
+				<tr>
+					<td> <h5>1.BLOG-1</h5> </td>
+					<td><p><a href=".\user\blog\blogedit.php" class="but">EDIT</a> </td></p>
+				
+				</tr> 
+			
+				<tr>
+					<td> <h5>2.BLOG-2</h5> </td>
+					<td><p><a href=".\user\blog\blogedit.php" class="but">EDIT</a> </td></p>
+			
+				</tr> 
+			
+				<tr>
+					<td> <h5>3.BLOG-3</h5> </td>
+					<td><p><a href=".\user\blog\blogedit.php" class="but">EDIT</a> </td></p>
+				
+				</tr> 
+			
+				<tr>
+					<td> <h5>4.BLOG-4 </h5> </td>
+					<td><p><a href=".\user\blog\blogedit.php" class="but">EDIT</a> </td></p>
+				
+				</tr> 
+			</table>
+        
+		</div>     
+        <p><a href=".\user\blog\blognew.php" class="a">ADD NEW</a></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>ADD TO CART</h2>
+        <p class="title"></p>
+		<div class="name">
+		
+			<table> 
+				<tr>
+					<td> <h5>1.PRODUCT-1</h5> </td>
+					<td><p><a href=".\user\addtocart\addnew.php" class="but">EDIT</a> </td></p>
+					<td><a class="but">DELETE</a> </td>
+				</tr> 
+			
+				<tr>
+					<td> <h5>2.PRODUCT-2</h5> </td>
+					<td><p><a href=".\user\addtocart\addnew.php" class="but">EDIT</a> </td></p>
+				<td><a class="but">DELETE</a> </td>
+				</tr> 
+			
+				<tr>
+					<td> <h5>3.PRODUCT-3</h5> </td>
+					<td><p><a href=".\user\addtocart\addnew.php" class="but">EDIT</a> </td></p>
+					<td><a class="but">DELETE</a> </td>
+				</tr> 
+			
+				<tr>
+					<td> <h5>4.PRODUCT-4 </h5> </td>
+					<td><p><a href=".\user\addtocart\addnew.php" class="but">EDIT</a> </td></p>
+					<td><a class="but">DELETE</a> </td>
+				</tr> 
+			</table>
+        
+		</div>     
+        <p><a href=".\user\addtocart\addupdate.php" class="a">ADD NEW</a></p>
+      </div>
+    </div>
+  </div>
+  
+  
   
   
   

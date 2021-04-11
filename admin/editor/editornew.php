@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>NEW USER REGISTRATION</title>
+    <title>NEW EDITOR REGISTRATION</title>
 </head>
 <body>
 <style>
@@ -334,7 +334,7 @@ html {
         }
     ?>
     
-
+    <fieldset>
         <form action="" method="post">
             <table>
                 <tr>
@@ -451,7 +451,7 @@ html {
             </table>
         </form>
         
-
+    </fieldset>
    </div>
     </div>
   </div>
