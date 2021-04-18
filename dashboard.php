@@ -121,32 +121,32 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.Raihan Mohon</h5> </td>
-					<td><a href=".\admin\admin\adminupdate.php" class="but">EDIT</a> </td>
-					<td><a href="#"  class="but">DELETE</a> </td>
+					<td><a href=".\admin\admin\controller\dash.php" class="but">EDIT</a> </td>
+			
 				</tr> 
 
 				<tr>
 					<td> <h5>2.Jui,Saha Pritha</h5> </td>
-					<td><a href=".\admin\admin\adminupdate.php" class="but">EDIT</a> </td>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><a href=".\admin\admin\controller\dash.php" class="but">EDIT</a> </td>
+			
 				</tr> 
 
 				<tr>
 					<td> <h5>3.Rabeya Bosri Sonia</h5> </td>
-					<td><p><a href=".\admin\admin\adminupdate.php" class="but">EDIT</a> </td></p>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\admin\controller\dash.php" class="but">EDIT</a> </td></p>
+			
 				</tr> 
 
 				<tr>
 					<td> <h5>4.Rajan Das Gupta </h5> </td>
-					<td><a href=".\admin\admin\adminupdate.php" class="but">EDIT</a> </td>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><a href=".\admin\admin\controller\dash.php" class="but">EDIT</a> </td>
+				
 				</tr> 
 			</table>
         
 		</div>
 		
-        <p> <a href=".\admin\admin\adminnew.php" class="a"> ADD NEW </a> </p>
+        <p> <a href=".\admin\admin\controller\addadmin.php" class="a"> ADD NEW </a> </p>
       </div>
     </div>
   </div>
@@ -164,32 +164,32 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.Dr.</h5> </td>
-					<td><a href=".\admin\doctor\doctorupdate.php" class="but">EDIT</a> </td>
-					<td><a href="#"  class="but">DELETE</a> </td>
+					<td><a href="./admin/doctor/controller/dash.php" class="but">EDIT</a> </td>
+
 				</tr> 
 
 				<tr>
 					<td> <h5>2.Dr.</h5> </td>
-					<td><a href=".\admin\doctor\doctorupdate.php" class="but">EDIT</a> </td>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><a href=".\admin\doctor\controller\dash.php" class="but">EDIT</a> </td>
+	
 				</tr> 
 
 				<tr>
 					<td> <h5>3.Dr.</h5> </td>
-					<td><p><a href=".\admin\doctor\doctorupdate.php" class="but">EDIT</a> </td></p>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\doctor\controller\dash.php" class="but">EDIT</a> </td></p>
+					
 				</tr> 
 
 				<tr>
 					<td> <h5>4.Dr. </h5> </td>
-					<td><a href=".\admin\doctor\doctorupdate.php" class="but">EDIT</a> </td>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><a href=".\admin\doctor\controller\dash.php" class="but">EDIT</a> </td>
+			
 				</tr> 
 			</table>
         
 		</div>
 		
-        <p> <a href=".\admin\doctor\doctoradd.php" class="a"> ADD NEW </a> </p>
+        <p> <a href=".\admin\doctor\controller\addadmin.php" class="a"> ADD NEW </a> </p>
       </div>
     </div>
   </div>
@@ -207,32 +207,32 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.Mr.</h5> </td>
-					<td><a href=".\admin\editor\editorupdate.php" class="but">EDIT</a> </td>
-					<td><a href="#"  class="but">DELETE</a> </td>
+					<td><a href=".\admin\editor\controller\dash.php" class="but">EDIT</a> </td>
+
 				</tr> 
 
 				<tr>
 					<td> <h5>2.Mr.</h5> </td>
-					<td><a href=".\admin\editor\editorupdate.php" class="but">EDIT</a> </td>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><a href=".\admin\editor\controller\dash.php" class="but">EDIT</a> </td>
+
 				</tr> 
 
 				<tr>
 					<td> <h5>3.Mr.</h5> </td>
-					<td><p><a href=".\admin\editor\editorupdate.php" class="but">EDIT</a> </td></p>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\editor\controller\dash.php" class="but">EDIT</a> </td></p>
+
 				</tr> 
 
 				<tr>
 					<td> <h5>4. Mr. </h5> </td>
-					<td><a href=".\admin\editor\editorupdate.php" class="but">EDIT</a> </td>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><a href=".\admin\editor\controller\dash.php" class="but">EDIT</a> </td>
+
 				</tr> 
 			</table>
         
 		</div>
 		
-        <p> <a href=".\admin\editor\editornew.php" class="a"> ADD NEW </a> </p>
+        <p> <a href=".\admin\editor\controller\addadmin.php" class="a"> ADD NEW </a> </p>
       </div>
     </div>
   </div>
@@ -250,32 +250,32 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.Mr.</h5> </td>
-					<td><a href=".\admin\user\updatebio.php" class="but">EDIT</a> </td>
-					<td><a href="#"  class="but">DELETE</a> </td>
+					<td><a href=".\admin\user\controller\dash.php"" class="but">EDIT</a> </td>
+
 				</tr> 
 
 				<tr>
 					<td> <h5>2.Mr.</h5> </td>
-					<td><a href=".\admin\user\updatebio.php" class="but">EDIT</a> </td>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><a href=".\admin\user\controller\dash.php"" class="but">EDIT</a> </td>
+
 				</tr> 
 
 				<tr>
 					<td> <h5>3.Mr.</h5> </td>
-					<td><p><a href=".\admin\user\updatebio.php" class="but">EDIT</a> </td></p>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\user\controller\dash.php"" class="but">EDIT</a> </td></p>
+
 				</tr> 
 
 				<tr>
 					<td> <h5>4. Mr. </h5> </td>
-					<td><a href=".\admin\user\updatebio.php" class="but">EDIT</a> </td>
-					<td><a href="" class="but">DELETE</a> </td>
+					<td><a href=".\admin\user\controller\dash.php"" class="but">EDIT</a> </td>
+
 				</tr> 
 			</table>
         
 		</div>
 		
-        <p> <a href=".\admin\user\updatebio.php" class="a"> ADD NEW </a> </p>
+        <p> <a href=".\admin\user\controller\addadmin.php"" class="a"> ADD NEW </a> </p>
       </div>
     </div>
   </div>
@@ -291,32 +291,32 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.Freeze-Dried Mini Nibs For Cats</h5> </td>
-					<td><p><a href=".\admin\product\proadd.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\product\controller\dash.php" class="but">EDIT</a> </td></p>
+			
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><p><a href=".\admin\product\proadd.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\product\controller\dash.php" class="but">EDIT</a> </td></p>
+				
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><p><a href=".\admin\product\proadd.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\product\controller\dash.php" class="but">EDIT</a> </td></p>
+					
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.Freeze Dried Chicken Littles </h5> </td>
-					<td><p><a href=".\admin\product\proadd.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\product\controller\dash.php" class="but">EDIT</a> </td></p>
+					
 				</tr> 
 			</table>
         
 		</div>
         
-        <p><a href=".\admin\product\proadd.php" class="a"> ADD NEW</a></p>
+        <p><a href=".\admin\product\controller\addadmin.php" class="a"> ADD NEW</a></p>
       </div>
     </div>
   </div>
@@ -332,31 +332,30 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.BLOG-1</h5> </td>
-					<td><p><a href=".\admin\blog\blogedit.php" class="but">EDIT</a> </td></p>
-					<td><a href="blogedit.php"class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\blog\controller\dash.php" class="but">EDIT</a> </td></p>
+
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.BLOG-2</h5> </td>
-					<td><p><a href=".\admin\blog\blogedit.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\blog\controller\dash.php" class="but">EDIT</a> </td></p>
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.BLOG-3</h5> </td>
-					<td><p><a href=".\admin\blog\blogedit.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
+					<td><p><a href=".\admin\blog\controller\dash.php" class="but">EDIT</a> </td></p>
+		
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.BLOG-4 </h5> </td>
-					<td><p><a href=".\admin\blog\blogedit.php" class="but">EDIT</a> </td></p>
-					<td><a class="but"> DELETE</a> </td>
+					<td><p><a href=".\admin\blog\controller\dash.php" class="but">EDIT</a> </td></p>
+	
 				</tr> 
 			</table>
         
 		</div>     
-        <p><a href=".\admin\blog\blognew.php" class="a">ADD NEW</a></p>
+        <p><a href=".\admin\blog\controller\addadmin.php" class="a">ADD NEW</a></p>
       </div>
     </div>
   </div>

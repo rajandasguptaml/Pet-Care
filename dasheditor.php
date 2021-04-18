@@ -122,31 +122,31 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.BLOG-1</h5> </td>
-					<td><p><a href=".\editor\blog\blogedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\editor\blog\controller\dash.php" class="but">EDIT</a> </td></p>
 				
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.BLOG-2</h5> </td>
-					<td><p><a href=".\editor\blog\blogedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\editor\blog\controller\dash.php" class="but">EDIT</a> </td></p>
 			
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.BLOG-3</h5> </td>
-					<td><p><a href=".\editor\blog\blogedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\editor\blog\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.BLOG-4 </h5> </td>
-					<td><p><a href=".\editor\blog\blogedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\editor\blog\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			</table>
         
 		</div>     
-        <p><a href=".\editor\blog\blognew.php" class="a">ADD NEW</a></p>
+        <p><a href=".\editor\blog\controller\addadmin.php" class="a">ADD NEW</a></p>
       </div>
     </div>
   </div>
@@ -162,7 +162,7 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.NEWS-1</h5> </td>
-					<td><p><a href=".\editor\news\newsedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\editor\news\controller\dash.php" class="but">EDIT</a> </td></p>
 
 				</tr> 
 			
@@ -201,32 +201,32 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.Freeze-Dried Mini Nibs For Cats</h5> </td>
-					<td><p><a href=".\editor\product\proadd.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\editor\product\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><p><a href=".\editor\product\proadd.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\editor\product\controller\dash.php" class="but">EDIT</a> </td></p>
 				
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><p><a href=".\editor\product\proadd.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\editor\product\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.Freeze Dried Chicken Littles </h5> </td>
-					<td><p><a href=".\editor\product\proadd.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\editor\product\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			</table>
         
 		</div>
         
-        <p><a href=".\editor\product\pronew.php" class="a"> ADD NEW</a></p>
+        <p><a href=".\editor\product\controller\addadmin.php" class="a"> ADD NEW</a></p>
       </div>
     </div>
   </div>

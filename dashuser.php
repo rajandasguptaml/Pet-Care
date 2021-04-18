@@ -14,7 +14,7 @@ html {
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 50%;
   margin-bottom: 16px;
   padding: 0 8px;
   
@@ -113,47 +113,6 @@ html {
   <div class="column">
     <div class="card">
       <div class="container">
-        <h2>PRODUCT & PETS</h2>
-        <p class="title"></p>
-		<div class="name">
-		
-			<table> 
-				<tr>
-					<td> <h5>1.Freeze-Dried Mini Nibs For Cats</h5> </td>
-					<td><p><a href=".\user\product\proadd.php" class="but">EDIT</a> </td></p>
-					
-				</tr> 
-			
-				<tr>
-					<td> <h5>2.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><p><a href=".\user\product\proadd.php" class="but">EDIT</a> </td></p>
-					
-				</tr> 
-			
-				<tr>
-					<td> <h5>3.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><p><a href=".\user\product\proadd.php" class="but">EDIT</a> </td></p>
-					
-				</tr> 
-			
-				<tr>
-					<td> <h5>4.Freeze Dried Chicken Littles </h5> </td>
-					<td><p><a href=".\user\product\proadd.php" class="but">EDIT</a> </td></p>
-				
-				</tr> 
-			</table>
-        
-		</div>
-        
-        <p><a href=".\user\product\proadd.php" class="a"> ADD NEW</a></p>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="column">
-    <div class="card">
-      <div class="container">
         <h2>BLOG & TIPS</h2>
         <p class="title"></p>
 		<div class="name">
@@ -161,31 +120,31 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.BLOG-1</h5> </td>
-					<td><p><a href=".\user\blog\blogedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\user\blog\controller\dash.php" class="but">EDIT</a> </td></p>
 				
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.BLOG-2</h5> </td>
-					<td><p><a href=".\user\blog\blogedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\user\blog\controller\dash.php" class="but">EDIT</a> </td></p>
 			
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.BLOG-3</h5> </td>
-					<td><p><a href=".\user\blog\blogedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\user\blog\controller\dash.php" class="but">EDIT</a> </td></p>
 				
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.BLOG-4 </h5> </td>
-					<td><p><a href=".\user\blog\blogedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\user\blog\controller\dash.php" class="but">EDIT</a> </td></p>
 				
 				</tr> 
 			</table>
         
 		</div>     
-        <p><a href=".\user\blog\blognew.php" class="a">ADD NEW</a></p>
+        <p><a href=".\user\blog\controller\addadmin.php" class="a">ADD NEW</a></p>
       </div>
     </div>
   </div>

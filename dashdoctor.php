@@ -14,7 +14,7 @@ html {
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 50%;
   margin-bottom: 16px;
   padding: 0 8px;
   
@@ -121,32 +121,32 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.Freeze-Dried Mini Nibs For Cats</h5> </td>
-					<td><p><a href=".\doctor\medicine\docproadd.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\medproduct\controller\dash.php" class="but">EDIT</a> </td></p>
 				
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><p><a href=".\doctor\medicine\docproadd.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\medproduct\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.Omega-Gold Plus Salmon Oil</h5> </td>
-					<td><p><a href=".\doctor\medicine\docproadd.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\medproduct\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.Freeze Dried Chicken Littles </h5> </td>
-					<td><p><a href=".\doctor\medicine\docproadd.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\medproduct\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			</table>
         
 		</div>
         
-        <p><a href=".\doctor\medicine\docpronew.php" class="a"> ADD NEW</a></p>
+        <p><a href=".\doctor\medproduct\controller\addadmin.php" class="a"> ADD NEW</a></p>
       </div>
     </div>
   </div>
@@ -162,74 +162,36 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.POST-1</h5> </td>
-					<td><p><a href=".\doctor\tips\doctipedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.POST-2</h5> </td>
-					<td><p><a href=".\doctor\tips\doctipedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.POST-3</h5> </td>
-					<td><p><a href=".\doctor\tips\doctipedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.POST-4 </h5> </td>
-					<td><p><a href=".\doctor\tips\doctipedit.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
 			
 				</tr> 
 			</table>
         
 		</div>     
-       <p><a href=".\doctor\tips\doctipnew.php" class="a"> ADD NEW</a></p>
+       <p><a href=".\doctor\medicine\controller\addadmin.php" class="a"> ADD NEW</a></p>
       </div>
     </div>
   </div>
   
-  <div class="column">
-    <div class="card">
-      <div class="container">
-        <h2>MEDICINE INFO</h2>
-        <p class="title"></p>
-		<div class="name">
-		
-			<table> 
-				<tr>
-					<td> <h5>1.INFO-1</h5> </td>
-					<td><p><a href=".\doctor\medinfo\docmededit.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
-				</tr> 
-			
-				<tr>
-					<td> <h5>2.INFO-2</h5> </td>
-					<td><p><a href=".\doctor\medinfo\docmededit.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
-				</tr> 
-			
-				<tr>
-					<td> <h5>3.INFO-3</h5> </td>
-					<td><p><a href=".\doctor\medinfo\docmededit.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
-				</tr> 
-			
-				<tr>
-					<td> <h5>4.INFO-4 </h5> </td>
-					<td><p><a href=".\doctor\medinfo\docmededit.php" class="but">EDIT</a> </td></p>
-			        <td><a class="but">DELETE</a> </td>
-				</tr> 
-			</table>
-        
-		</div>     
-       <p><a href=".\doctor\medinfo\docmednew.php" class="a"> ADD NEW</a></p>
-      </div>
-    </div>
-  </div>
-  
+ 
   
   
   
