@@ -2,32 +2,25 @@
    require_once 'db_config.php' ;		
      $bname="";
 	 $err_bname="";
-     $cname="";
-	 $err_cname="";
+
 	 $content=""; 
 	 $err_content="";
 	 $hasError=false;
 	 
 	
 	 
-	 if(isset($_POST["blogp"])){
+	 if(isset($_POST["review"])){
 		
 			if (empty($_POST["bname"])){
-				$err_fname="Blog Intro required";
+				$err_fname="Review Topic required";
 				$hasError=true;
 			}
 			else{
 				$bname=htmlspecialchars($_POST["bname"]);
 			}
-			If (empty($_POST["cname"])){
-				$err_cname="Blog Catagory required";
-				$hasError=true; 
-			}
-			else{
-				$cname=htmlspecialchars($_POST["cname"]);
-			}
+			
             if (empty($_POST["content"])){
-				$err_content="Content Required";
+				$err_content="Review Content Required";
 				$hasError=true;
 			}
 			elseif (strlen($_POST["content"])<6){
@@ -44,22 +37,22 @@
 				
 			}
              
-            insertCustomer($bname,$cname,$content); 
+            insertCustomer($bname,$content); 
 	}
 	//Insert
-    function insertCustomer($bname,$cname,$content)
+    function insertCustomer($bname,$content)
     {
-        $query = "INSERT INTO blogp VALUES (NULL,'$bname','$cname','$content')" ;
+        $query = "INSERT INTO review VALUES (NULL,'$bname','$content')" ;
         echo $query ;
         execute($query) ;
         header("Location: dash.php");
     }
     //Update  
 	if(isset($_POST["update_customer"])){
-		editCustomer($_POST["id"],$_POST["bname"],$_POST["cname"],$_POST["content"]);
+		editCustomer($_POST["id"],$_POST["bname"],$_POST["content"]);
 	}
-	function editCustomer($id,$bname,$cname,$content){
-		$query = "update blogp set bname = '$bname', cname ='$cname', content ='$content' where id = $id";
+	function editCustomer($id,$bname,$content){
+		$query = "update review set bname = '$bname', content ='$content' where id = $id";
 		echo $query ;
 		execute($query);
 		header("Location: dash.php");
@@ -71,24 +64,24 @@
 	} 
     function deleteCustomer($id)
 	{
-		$query = "DELETE FROM blogp WHERE id=$id;";
+		$query = "DELETE FROM review WHERE id=$id;";
 		echo $query;
 		execute($query);
 		header("Location: dash.php");
 	}
 	//View
-    function getblogp($id)
+    function getreview($id)
     {
-        $query = "select * from blogp where id='$id'" ;
+        $query = "select * from review where id='$id'" ;
         $result = get($query) ;
         if(count($result)){
             return $result[0] ;
         }
         return false ;
     }
-    function getAllblogp()
+    function getAllreview()
     {
-        $query = "select * from blogp" ;
+        $query = "select * from review" ;
         $result = get($query) ;
         return $result ;
     }

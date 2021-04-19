@@ -113,34 +113,17 @@ html {
   <div class="column">
     <div class="card">
       <div class="container">
-        <h2>BLOG & TIPS</h2>
+        <h2>REVIEW & TIPS</h2>
         <p class="title"></p>
 		<div class="name">
 		
 			<table> 
 				<tr>
-					<td> <h5>1.BLOG-1</h5> </td>
+					<td> <h5>REVIEW</h5> </td>
 					<td><p><a href=".\user\blog\controller\dash.php" class="but">EDIT</a> </td></p>
 				
 				</tr> 
 			
-				<tr>
-					<td> <h5>2.BLOG-2</h5> </td>
-					<td><p><a href=".\user\blog\controller\dash.php" class="but">EDIT</a> </td></p>
-			
-				</tr> 
-			
-				<tr>
-					<td> <h5>3.BLOG-3</h5> </td>
-					<td><p><a href=".\user\blog\controller\dash.php" class="but">EDIT</a> </td></p>
-				
-				</tr> 
-			
-				<tr>
-					<td> <h5>4.BLOG-4 </h5> </td>
-					<td><p><a href=".\user\blog\controller\dash.php" class="but">EDIT</a> </td></p>
-				
-				</tr> 
 			</table>
         
 		</div>     
@@ -160,32 +143,16 @@ html {
 		
 			<table> 
 				<tr>
-					<td> <h5>1.PRODUCT-1</h5> </td>
-					<td><p><a href=".\user\addtocart\addnew.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
+					<td> <h5>PRODUCT</h5> </td>
+					<td><p><a href=".\user\addtocart\controller\dash.php" class="but">EDIT</a> </td></p>
+					
 				</tr> 
 			
-				<tr>
-					<td> <h5>2.PRODUCT-2</h5> </td>
-					<td><p><a href=".\user\addtocart\addnew.php" class="but">EDIT</a> </td></p>
-				<td><a class="but">DELETE</a> </td>
-				</tr> 
-			
-				<tr>
-					<td> <h5>3.PRODUCT-3</h5> </td>
-					<td><p><a href=".\user\addtocart\addnew.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
-				</tr> 
-			
-				<tr>
-					<td> <h5>4.PRODUCT-4 </h5> </td>
-					<td><p><a href=".\user\addtocart\addnew.php" class="but">EDIT</a> </td></p>
-					<td><a class="but">DELETE</a> </td>
-				</tr> 
+				
 			</table>
         
 		</div>     
-        <p><a href=".\user\addtocart\addupdate.php" class="a">ADD NEW</a></p>
+        <p><a href=".\user\addtocart\controller\addadmin.php" class="a">ADD NEW</a></p>
       </div>
     </div>
   </div>

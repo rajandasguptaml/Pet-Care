@@ -103,12 +103,12 @@ html {
 
 <div id="dash"></div>
 <div class="dash-section">
-  <h1>BLOGS & TIPS </h1> 
+  <h1>REVIEW & TIPS </h1> 
 </div>
 
 <?php
 	require_once "admincontroller.php" ;
-	$blogp = getAllblogp();
+	$review = getAllreview();
 ?>
 <html>
     <head> 
@@ -120,24 +120,23 @@ html {
 	<table border="1" style="border-collapse:collapse;">
 			<thead>
 				<th>Serial</th>
-				<th>Blog Intro</th>
-				<th>Catagory</th>
-				<th>Blog Content</th>
+				<th>Review Topic</th>
+				<th>Review Content</th>
 				<th>Action</th>
 				<th>Action</th>
 				
 			</thead>
 			<tbody>
 				<?php
-					foreach($blogp as $blogp)
+					foreach($review as $review)
 					{
 						echo "<tr>" ;
-							echo "<td>".$blogp["id"]."</td>" ;
-							echo "<td>".$blogp["bname"]."</td>" ;
-							echo "<td>".$blogp["cname"]."</td>" ;
-							echo "<td>".$blogp["content"]."</td>" ;
-							echo '<td><a href=" update.php?id='.$blogp["id"].'">Edit</a></td>';
-							echo '<td><a href=" remove.php?id='.$blogp["id"].'">Delete</a></td>';
+							echo "<td>".$review["id"]."</td>" ;
+							echo "<td>".$review["bname"]."</td>" ;
+						
+							echo "<td>".$review["content"]."</td>" ;
+							echo '<td><a href=" update.php?id='.$review["id"].'">Edit</a></td>';
+							echo '<td><a href=" remove.php?id='.$review["id"].'">Delete</a></td>';
 						echo "</tr>" ;
 					}
 				?>

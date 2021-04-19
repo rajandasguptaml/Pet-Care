@@ -14,7 +14,7 @@ html {
 
 .column {
   float: left;
-  width: 50%;
+  width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
   
@@ -122,6 +122,7 @@ html {
 				<tr>
 					<td> <h5>1.Freeze-Dried Mini Nibs For Cats</h5> </td>
 					<td><p><a href=".\doctor\medproduct\controller\dash.php" class="but">EDIT</a> </td></p>
+					
 				
 				</tr> 
 			
@@ -129,17 +130,20 @@ html {
 					<td> <h5>2.Omega-Gold Plus Salmon Oil</h5> </td>
 					<td><p><a href=".\doctor\medproduct\controller\dash.php" class="but">EDIT</a> </td></p>
 					
+					
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.Omega-Gold Plus Salmon Oil</h5> </td>
 					<td><p><a href=".\doctor\medproduct\controller\dash.php" class="but">EDIT</a> </td></p>
 					
+					
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.Freeze Dried Chicken Littles </h5> </td>
 					<td><p><a href=".\doctor\medproduct\controller\dash.php" class="but">EDIT</a> </td></p>
+					
 					
 				</tr> 
 			</table>
@@ -155,32 +159,36 @@ html {
   <div class="column">
     <div class="card">
       <div class="container">
-        <h2>DOCTORIAL TIPS</h2>
+        <h2>PETCARE BLOG</h2>
         <p class="title"></p>
 		<div class="name">
 		
 			<table> 
 				<tr>
 					<td> <h5>1.POST-1</h5> </td>
-					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\medicine\controller\dash.php"  class="but">EDIT</a> </td></p>
+					
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.POST-2</h5> </td>
 					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
+				
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.POST-3</h5> </td>
 					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
+			
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.POST-4 </h5> </td>
 					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
+				
 			
 				</tr> 
 			</table>
@@ -190,6 +198,49 @@ html {
       </div>
     </div>
   </div>
+  
+   <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>CLITENS</h2>
+        <p class="title"></p>
+		<div class="name">
+		
+			<table> 
+				<tr>
+					<td> <h5>1.Patient-1</h5> </td>
+					<td><p><a href=".\doctor\clients\controller\dash.php" class="but">EDIT</a> </td></p>
+					
+					
+				</tr> 
+			
+				<tr>
+					<td> <h5>2.Patient-2</h5> </td>
+					<td><p><a href=".\doctor\clients\controller\dash.php" class="but">EDIT</a> </td></p>
+			
+					
+				</tr> 
+			
+				<tr>
+					<td> <h5>3.Patient-3</h5> </td>
+					<td><p><a href=".\doctor\clients\controller\dash.php" class="but">EDIT</a> </td></p>
+			
+				</tr> 
+			
+				<tr>
+					<td> <h5>4.Patient-4 </h5> </td>
+					<td><p><a href=".\doctor\clients\controller\dash.php" class="but">EDIT</a> </td></p>
+				
+			
+				</tr> 
+			</table>
+        
+		</div>     
+       <p><a href=".\doctor\clients\controller\addadmin.php" class="a"> ADD NEW</a></p>
+      </div>
+    </div>
+  </div>
+  
   
  
   

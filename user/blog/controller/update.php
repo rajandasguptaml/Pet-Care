@@ -110,7 +110,7 @@ html {
 <?php
     require "admincontroller.php" ;
 	$id = $_GET["id"];
-	$blogp = getblogp($id) ;
+	$review = getreview($id) ;
 ?>
 <html>
       <head>
@@ -126,27 +126,20 @@ html {
 		    <form action="" method="post">
 			   <table align="center">
 			   <tr>
-					<td><input type="hidden" name="id" value="<?php echo $blogp["id"] ;?>"></td>
+					<td><input type="hidden" name="id" value="<?php echo $review["id"] ;?>"></td>
 			         
 					 </tr>
-			           <tr>
-					        <td><span><b>Blog Intro:</b></span></td>
+			           tr>
+					        <td><span><b>Review Topic:</b></span></td>
 							
 							<td><input type="text" name="bname" value="<?php echo $bname;?>" size="" placeholder="Blog_Intro"><br>
 							<span><?php echo $err_bname;?></span></td>
 					    </tr>
-						
-					     <tr>
-					         <td><span><b>Catagory</b></span></td>
-					         <td><input type="radio"name="cname" value="<?php echo "Food";?>"> <span>Food</span>
-					         <input type="radio"  name="cname" value="<?php echo "Health";?>"> <span>Health</span>
-							 <input type="radio"  name="cname" value="<?php echo "Life_Style";?>"> <span>Life Style</span>
-							 <br> <span> <?php echo $err_cname;?></span></td>
-				  	   </tr>
+				   
 					   
 					   <tr>
-				           <td><span><b>Blog Content:</b></span></td>
-					       <td><input type="text" name="content" value="<?php echo $content;?>" placeholder="Blog_Content"><br>
+				           <td><span><b>Review Content:</b></span></td>
+					       <td><input type="text" name="content" value="<?php echo $content;?>" placeholder="Blog Content"><br>
 						    <span><?php echo $err_content;?></span></td>
 			          </tr>
 					  

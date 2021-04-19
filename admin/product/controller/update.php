@@ -110,7 +110,7 @@ html {
 <?php
     require "admincontroller.php" ;
 	$id = $_GET["id"];
-	$productp = getproductp($id) ;
+	$productpp = getproductpp($id) ;
 ?>
 <html>
       <head>
@@ -126,13 +126,13 @@ html {
 		    <form action="" method="post">
 			   <table align="center">
 			   <tr>
-					<td><input type="hidden" name="id" value="<?php echo $productp["id"] ;?>"></td>
+					<td><input type="hidden" name="id" value="<?php echo $productpp["id"] ;?>"></td>
 			         
 					 </tr>
 			           <tr>
-					        <td><span><b>Product Intro:</b></span></td>
+					        <td><span><b>Product Name:</b></span></td>
 							
-							<td><input type="text" name="bname" value="<?php echo $bname;?>" size="" placeholder="Blog_Intro"><br>
+							<td><input type="text" name="bname" value="<?php echo  $productpp["bname"];?>" size="" placeholder="Product_Name"><br>
 							<span><?php echo $err_bname;?></span></td>
 					    </tr>
 						
@@ -143,10 +143,16 @@ html {
 							 <input type="radio"  name="cname" value="<?php echo "Life_Style";?>"> <span>Life Style</span>
 							 <br> <span> <?php echo $err_cname;?></span></td>
 				  	   </tr>
+					   <tr>
+					        <td><span><b>Price:</b></span></td>
+							
+							<td><input type="text" name="pname" value="<?php echo $productpp["pname"]?>" size="" placeholder="Product_price"><br>
+							<span><?php echo $err_pname;?></span></td>
+					    </tr>
 					   
 					   <tr>
 				           <td><span><b>Product Content:</b></span></td>
-					       <td><input type="text" name="content" value="<?php echo $content;?>" placeholder="Content"><br>
+					       <td><input type="text" name="content" value="<?php echo $productpp["content"];?>" placeholder="Content"><br>
 						    <span><?php echo $err_content;?></span></td>
 			          </tr>
 					  

@@ -108,7 +108,7 @@ html {
 
 <?php
 	require_once "admincontroller.php" ;
-	$productp = getAllproductp();
+	$productpp = getAllproductpp();
 ?>
 <html>
     <head> 
@@ -122,6 +122,7 @@ html {
 				<th>Serial</th>
 				<th>Product Intro</th>
 				<th>Catagory</th>
+				<th>Price</th>
 				<th>Product Content</th>
 				<th>Action</th>
 				<th>Action</th>
@@ -129,15 +130,16 @@ html {
 			</thead>
 			<tbody>
 				<?php
-					foreach($productp as $productp)
+					foreach($productpp as $productpp)
 					{
 						echo "<tr>" ;
-							echo "<td>".$productp["id"]."</td>" ;
-							echo "<td>".$productp["bname"]."</td>" ;
-							echo "<td>".$productp["cname"]."</td>" ;
-							echo "<td>".$productp["content"]."</td>" ;
-							echo '<td><a href=" update.php?id='.$productp["id"].'">Edit</a></td>';
-							echo '<td><a href=" remove.php?id='.$productp["id"].'">Delete</a></td>';
+							echo "<td>".$productpp["id"]."</td>" ;
+							echo "<td>".$productpp["bname"]."</td>" ;
+							echo "<td>".$productpp["cname"]."</td>" ;
+							echo "<td>".$productpp["pname"]."</td>" ;
+							echo "<td>".$productpp["content"]."</td>" ;
+							echo '<td><a href=" update.php?id='.$productpp["id"].'">Edit</a></td>';
+							echo '<td><a href=" remove.php?id='.$productpp["id"].'">Delete</a></td>';
 						echo "</tr>" ;
 					}
 				?>

@@ -102,7 +102,7 @@ html {
 
 <div id="dash"></div>
 <div class="dash-section">
-  <h1> ADD BLOG</h1> 
+  <h1> ADD REVIEW</h1> 
 </div>
 
 
@@ -124,28 +124,21 @@ html {
 		    <form action="" method="post">
 			   <table align="center">
 			          <tr>
-					        <td><span><b>Blog Intro:</b></span></td>
+					        <td><span><b>Review Topic:</b></span></td>
 							
 							<td><input type="text" name="bname" value="<?php echo $bname;?>" size="" placeholder="Blog_Intro"><br>
 							<span><?php echo $err_bname;?></span></td>
 					    </tr>
-						
-					     <tr>
-					         <td><span><b>Catagory</b></span></td>
-					         <td><input type="radio"  name="cname" value="<?php echo "Food";?>"> <span>Food</span>
-					         <input type="radio"  name="cname" value="<?php echo "Health";?>"> <span>Health</span>
-							 <input type="radio"  name="cname" value="<?php echo "Life_Style";?>"> <span>Life Style</span>
-							 <br> <span> <?php echo $err_cname;?></span></td>
-				  	   </tr>
+				   
 					   
 					   <tr>
-				           <td><span><b>Blog Content:</b></span></td>
+				           <td><span><b>Review Content:</b></span></td>
 					       <td><input type="text" name="content" value="<?php echo $content;?>" placeholder="Blog Content"><br>
 						    <span><?php echo $err_content;?></span></td>
 			          </tr>
 				      
 					    <tr>
-				             <td><input type="submit" name="blogp" value="ADD"></td>
+				             <td><input type="submit" name="review" value="ADD"></td>
 				        </tr>    
 							
 					       

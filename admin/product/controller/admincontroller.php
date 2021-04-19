@@ -4,16 +4,18 @@
 	 $err_bname="";
      $cname="";
 	 $err_cname="";
+	 $pname="";
+	 $err_pname="";
 	 $content=""; 
 	 $err_content="";
 	 $hasError=false;
 	 
 	
 	 
-	 if(isset($_POST["productp"])){
+	 if(isset($_POST["productpp"])){
 		
 			if (empty($_POST["bname"])){
-				$err_fname="Product Intro required";
+				$err_bname="Product Intro required";
 				$hasError=true;
 			}
 			else{
@@ -25,6 +27,13 @@
 			}
 			else{
 				$cname=htmlspecialchars($_POST["cname"]);
+			}
+			if (empty($_POST["pname"])){
+				$err_pname="Product price required";
+				$hasError=true;
+			}
+			else{
+				$pname=htmlspecialchars($_POST["pname"]);
 			}
             if (empty($_POST["content"])){
 				$err_content="Content Required";
@@ -44,22 +53,22 @@
 				
 			}
              
-            insertCustomer($bname,$cname,$content); 
+            insertCustomer($bname,$cname,$pname,$content); 
 	}
 	//Insert
-    function insertCustomer($bname,$cname,$content)
+    function insertCustomer($bname,$cname,$pname,$content)
     {
-        $query = "INSERT INTO productp VALUES (NULL,'$bname','$cname','$content')" ;
+        $query = "INSERT INTO productpp VALUES (NULL,'$bname','$cname','$pname','$content')" ;
         echo $query ;
         execute($query) ;
         header("Location: dash.php");
     }
     //Update  
 	if(isset($_POST["update_customer"])){
-		editCustomer($_POST["id"],$_POST["bname"],$_POST["cname"],$_POST["content"]);
+		editCustomer($_POST["id"],$_POST["bname"],$_POST["cname"],$_POST["pname"],$_POST["content"]);
 	}
-	function editCustomer($id,$bname,$cname,$content){
-		$query = "update productp set bname = '$bname', cname ='$cname', content ='$content' where id = $id";
+	function editCustomer($id,$bname,$cname,$pname,$content){
+		$query = "update productpp set bname = '$bname', cname ='$cname', pname ='$pname', content ='$content' where id = $id";
 		echo $query ;
 		execute($query);
 		header("Location: dash.php");
@@ -71,24 +80,24 @@
 	} 
     function deleteCustomer($id)
 	{
-		$query = "DELETE FROM productp WHERE id=$id;";
+		$query = "DELETE FROM productpp WHERE id=$id;";
 		echo $query;
 		execute($query);
 		header("Location: dash.php");
 	}
 	//View
-    function getproductp($id)
+    function getproductpp($id)
     {
-        $query = "select * from productp where id='$id'" ;
+        $query = "select * from productpp where id='$id'" ;
         $result = get($query) ;
         if(count($result)){
             return $result[0] ;
         }
         return false ;
     }
-    function getAllproductp()
+    function getAllproductpp()
     {
-        $query = "select * from productp" ;
+        $query = "select * from productpp" ;
         $result = get($query) ;
         return $result ;
     }

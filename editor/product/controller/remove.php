@@ -101,14 +101,14 @@ html {
 
 <div id="dash"></div>
 <div class="dash-section">
-  <h1>REMOVE BLOG</h1> 
+  <h1>REMOVE Product</h1> 
 </div>
 
 
 <?php
 	require "admincontroller.php" ;
 	$id = $_GET["id"];
-	$productp = getproductp($id) ;
+	$productpp = getproductpp($id) ;
 
 ?>
 
@@ -126,12 +126,12 @@ html {
 		    <form action="" method="post">
 			   <table align="center">
 			   <tr>
-			         <td><input type="hidden" name="id" value="<?php echo $productp["id"];?>"></td> 
+			         <td><input type="hidden" name="id" value="<?php echo $productpp["id"];?>"></td> 
 					 </tr>
 					    
                      <tr>
-				           <td><span><b>Blog Intro:<b></span></td>
-					       <td><input type="text" name="bname" value="<?php echo $productp["bname"];?>" placeholder="Blog Intro"><br>
+				           <td><span><b>Product Name:<b></span></td>
+					       <td><input type="text" name="bname" value="<?php echo $productpp["bname"];?>" placeholder="Product_Name"><br>
 						    <span><?php echo $err_bname;?></span></td>
 			          </tr>
 

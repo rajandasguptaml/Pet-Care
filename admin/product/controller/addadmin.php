@@ -63,7 +63,14 @@ html {
 
 
 .a {
-  border: none;
+    
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+
   outline: 0;
   display: inline-block;
   padding: 8px;
@@ -100,6 +107,8 @@ html {
 
 </style>
 
+
+
 <div id="dash"></div>
 <div class="dash-section">
   <h1> ADD PRODUCT</h1> 
@@ -112,9 +121,11 @@ html {
 
 <html>
       <head>
+	  
 	  <title>Add </title>
 	      
 	  <head>
+	 
 	  
 	     <body>
 		 <div class="adduser-div">
@@ -124,7 +135,7 @@ html {
 		    <form action="" method="post">
 			   <table align="center">
 			          <tr>
-					        <td><span><b>Product Intro:</b></span></td>
+					        <td><span><b>Product Name:</b></span></td>
 							
 							<td><input type="text" name="bname" value="<?php echo $bname;?>" size="" placeholder="Product_Intro"><br>
 							<span><?php echo $err_bname;?></span></td>
@@ -139,13 +150,20 @@ html {
 				  	   </tr>
 					   
 					   <tr>
+					        <td><span><b>Product Price:</b></span></td>
+							
+							<td><input type="text" name="pname" value="<?php echo $pname;?>" size="" placeholder="Product_Price"><br>
+							<span><?php echo $err_pname;?></span></td>
+					    </tr>
+					   
+					   <tr>
 				           <td><span><b>Product Content:</b></span></td>
 					       <td><input type="text" name="content" value="<?php echo $content;?>" placeholder="Product Content"><br>
 						    <span><?php echo $err_content;?></span></td>
 			          </tr>
 				      
 					    <tr>
-				             <td><input type="submit" name="productp" value="ADD"></td>
+				             <td><input type="submit" name="productpp" value="ADD"></td>
 				        </tr>    
 							
 					       

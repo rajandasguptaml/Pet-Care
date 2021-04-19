@@ -108,7 +108,7 @@ html {
 <?php
 	require "admincontroller.php" ;
 	$id = $_GET["id"];
-	$blogp = getblogp($id) ;
+	$review = getreview($id) ;
 
 ?>
 
@@ -126,12 +126,12 @@ html {
 		    <form action="" method="post">
 			   <table align="center">
 			   <tr>
-			         <td><input type="hidden" name="id" value="<?php echo $blogp["id"];?>"></td> 
+			         <td><input type="hidden" name="id" value="<?php echo $review["id"];?>"></td> 
 					 </tr>
 					    
                      <tr>
 				           <td><span><b>Blog Intro:<b></span></td>
-					       <td><input type="text" name="bname" value="<?php echo $blogp["bname"];?>" placeholder="Blog Intro"><br>
+					       <td><input type="text" name="bname" value="<?php echo $review["bname"];?>" placeholder="Blog Intro"><br>
 						    <span><?php echo $err_bname;?></span></td>
 			          </tr>
 
