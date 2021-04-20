@@ -132,29 +132,29 @@ html {
 
 		<legend align="center"><h3>ADD</h3></legend>
 		 
-		    <form action="" method="post">
+		    <form action="" method="post" onsubmit="return validate()">
 			   <table align="center">
 			          <tr>
 					        <td><span><b>Pet Owner Details:</b></span></td>
 							
-							<td><input type="text" name="bname" value="<?php echo $bname;?>" size="" placeholder="Owner_Info"><br>
-							<span><?php echo $err_bname;?></span></td>
+							<td><input type="text" id="bname" name="bname" value="<?php echo $bname;?>" size="" placeholder="Owner_Info"><br>
+							<span id="err_bname"><?php echo $err_bname;?></span></td>
 					    </tr>
 						 
 					   <tr>
 				           <td><span><b>Appoinment Information:</b></span></td>
-					       <td><input type="text" name="content" value="<?php echo $content;?>" placeholder="appoinment_info"><br>
-						    <span><?php echo $err_content;?></span></td>
+					       <td><input type="text" id="content" name="content" value="<?php echo $content;?>" placeholder="appoinment_info"><br>
+						    <span id="err_content"><?php echo $err_content;?></span></td>
 			          </tr>
 						
 						
 						
 					     <tr>
 					         <td><span><b>Health Issues:</b></span></td>
-					         <td><input type="radio"  name="cname" value="<?php echo "Medical";?>"> <span>Medical</span>
-					         <input type="radio"  name="cname" value="<?php echo "Surgical";?>"> <span>Surgical</span>
-							 <input type="radio"  name="cname" value="<?php echo "Vaccines";?>"> <span>Vaccines</span>
-							 <br> <span> <?php echo $err_cname;?></span></td>
+					         <td><input type="radio" id="Medical" name="cname" value="<?php echo "Medical";?>"> <span>Medical</span>
+					         <input type="radio" id="Surgical" name="cname" value="<?php echo "Surgical";?>"> <span>Surgical</span>
+							 <input type="radio" id="Vaccines" name="cname" value="<?php echo "Vaccines";?>"> <span>Vaccines</span>
+							 <br> <span id="err_cname"> <?php echo $err_cname;?></span></td>
 				  	   </tr>
 					   
 					   
@@ -162,8 +162,8 @@ html {
 					   <tr>
 					        <td><span><b>Time Slot:</b></span></td>
 							
-							<td><input type="text" name="pname" value="<?php echo $pname;?>" size="" placeholder="If Available Than Contact You Soon"><br>
-							<span><?php echo $err_pname;?></span></td>
+							<td><input type="text" id="pname" name="pname" value="<?php echo $pname;?>" size="" placeholder="If Available Than Contact You Soon"><br>
+							<span id="err_pname"><?php echo $err_pname;?></span></td>
 					    </tr>
 				      
 					    <tr>
@@ -174,7 +174,59 @@ html {
 				</table>
              </form>
 			 <div>
-	
+			 
+		<script>
+				function get(id){
+					return document.getElementById(id);
+				}
+			
+			
+				function validate(){
+					cleanUp();
+					var hasError=false;
+					if(get("bname").value == ""){
+						get("bname").focus();
+						get("err_bname").innerHTML="Pet Owner Details Required";
+						get("err_bname").style.color="Red";
+						hasError=true;
+					}
+				    if(get("content").value == ""){
+						get("content").focus();
+						get("err_content").innerHTML="Appoinment Information Required";
+						get("err_content").style.color="Red";
+						hasError=true;
+					}
+					
+				    if(get("Medical").checked == false && get("Surgical").checked == false &&  get("Vaccines").checked == false){
+						//get("cname").focus();
+						get("err_cname").innerHTML="Health Issues Required";
+						get("err_cname").style.color="Red";
+						hasError=true;
+					}
+					if(get("pname").value == ""){
+						get("pname").focus();
+						get("err_pname").innerHTML="Enter Your Time Schesule";
+						get("err_pname").style.color="Red";
+						hasError=true;
+					} 
+					
+					if(!hasError){
+						return true;
+					}
+					return false;
+					
+				}
+				function cleanUp(){
+				
+					get("err_bname").innerHTML="";
+					get("err_content").innerHTML="";
+					get("err_cname").innerHTML="";
+					get("err_pname").innerHTML="";
+					
+				}
+	    </script>
 		 </body>
 		 
-</html>
+</html> 
+			 
+

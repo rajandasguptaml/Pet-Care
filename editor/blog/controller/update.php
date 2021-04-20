@@ -132,7 +132,7 @@ html {
 			           <tr>
 					        <td><span><b>Blog Intro:</b></span></td>
 							
-							<td><input type="text" name="bname" value="<?php echo $bname["bname"];?>" size="" placeholder="Blog_Intro"><br>
+							<td><input type="text" name="bname" value="<?php echo $blogp["bname"];?>" size="" placeholder="Blog_Intro"><br>
 							<span><?php echo $err_bname;?></span></td>
 					    </tr>
 						
@@ -146,7 +146,7 @@ html {
 					   
 					   <tr>
 				           <td><span><b>Blog Content:</b></span></td>
-					       <td><input type="text" name="content" value="<?php echo $content["content"];?>" placeholder="Blog_Content"><br>
+					       <td><input type="text" name="content" value="<?php echo $blogp["content"];?>" placeholder="Blog_Content"><br>
 						    <span><?php echo $err_content;?></span></td>
 			          </tr>
 					  

@@ -121,27 +121,27 @@ html {
 
 		<legend align="center"><h3>ADD</h3></legend>
 		 
-		    <form action="" method="post">
+		    <form action="" method="post" onsubmit="return validate()">
 			   <table align="center">
 			          <tr>
 					        <td><span><b>Blog Intro:</b></span></td>
 							
-							<td><input type="text" name="bname" value="<?php echo $bname;?>" size="" placeholder="Blog_Intro"><br>
-							<span><?php echo $err_bname;?></span></td>
+							<td><input type="text"id="bname"  name="bname" value="<?php echo $bname;?>" size="" placeholder="Intro"><br>
+							<span id="err_bname" ><?php echo $err_bname;?></span></td>
 					    </tr>
 						
 					     <tr>
 					         <td><span><b>Catagory</b></span></td>
-					         <td><input type="radio"  name="cname" value="<?php echo "Food";?>"> <span>Food</span>
-					         <input type="radio"  name="cname" value="<?php echo "Health";?>"> <span>Health</span>
-							 <input type="radio"  name="cname" value="<?php echo "Life_Style";?>"> <span>Life Style</span>
-							 <br> <span> <?php echo $err_cname;?></span></td>
+					         <td><input type="radio" id="Food" name="cname" value="<?php echo "Food";?>"> <span>Food</span>
+					         <input type="radio" id="Health" name="cname" value="<?php echo "Health";?>"> <span>Health</span>
+							 <input type="radio" id="Life Style" name="cname" value="<?php echo "Life_Style";?>"> <span>Life Style</span>
+							 <br> <span id="err_cname"> <?php echo $err_cname;?></span></td>
 				  	   </tr>
 					   
 					   <tr>
-				           <td><span><b>Blog Content:</b></span></td>
-					       <td><input type="text" name="content" value="<?php echo $content;?>" placeholder="Blog Content"><br>
-						    <span><?php echo $err_content;?></span></td>
+				           <td><span><b> Content:</b></span></td>
+					       <td><input type="text" id="content"  name="content" value="<?php echo $content;?>" placeholder=" Content"><br>
+						    <span id="err_content"><?php echo $err_content;?></span></td>
 			          </tr>
 				      
 					    <tr>
@@ -152,7 +152,53 @@ html {
 				</table>
              </form>
 			 <div>
-	
+			 
+			 	 
+		<script>
+				function get(id){
+					return document.getElementById(id);
+				}
+			
+			
+				function validate(){
+					cleanUp();
+					var hasError=false;
+					if(get("bname").value == ""){
+						get("bname").focus();
+						get("err_bname").innerHTML="Blog Information Required";
+						get("err_bname").style.color="Red";
+						hasError=true;
+					}
+				    if(get("content").value == ""){
+						get("content").focus();
+						get("err_content").innerHTML="Content Required";
+						get("err_content").style.color="Red";
+						hasError=true;
+					}
+					
+				    if(get("Food").checked == false && get("Health").checked == false &&  get("Life Style").checked == false){
+						//get("cname").focus();
+						get("err_cname").innerHTML="Please Select Catagory";
+						get("err_cname").style.color="Red";
+						hasError=true;
+					}
+					
+					
+					if(!hasError){
+						return true;
+					}
+					return false;
+					
+				}
+				function cleanUp(){
+				
+					get("err_bname").innerHTML="";
+					get("err_content").innerHTML="";
+					get("err_cname").innerHTML="";
+					
+					
+				}
+	    </script>
 		 </body>
-		 
+	
 </html>

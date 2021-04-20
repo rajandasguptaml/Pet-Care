@@ -132,7 +132,7 @@ html {
 			           <tr>
 					        <td><span><b>Product Name:</b></span></td>
 							
-							<td><input type="text" name="bname" value="<?php echo $bname;?>" size="" placeholder="Product_Intro"><br>
+							<td><input type="text" name="bname" value="<?php echo $addcart ["bname"];?>" size="" placeholder="Product_Intro"><br>
 							<span><?php echo $err_bname;?></span></td>
 					    </tr>
 						
@@ -146,7 +146,7 @@ html {
 					   
 					   <tr>
 				           <td><span><b>Address:</b></span></td>
-					       <td><input type="text" name="content" value="<?php echo $content;?>" placeholder="Product Content"><br>
+					       <td><input type="text" name="content" value="<?php echo $addcart["content"];?>" placeholder="Product Content"><br>
 						    <span><?php echo $err_content;?></span></td>
 			          </tr>
 					    

@@ -121,27 +121,28 @@ html {
 
 		<legend align="center"><h3>ADD</h3></legend>
 		 
-		    <form action="" method="post">
+		    <form action="" method="post" onsubmit="return validate()">
 			   <table align="center">
+			   
 			          <tr>
 					        <td><span><b>Product Name:</b></span></td>
 							
-							<td><input type="text" name="bname" value="<?php echo $bname;?>" size="" placeholder="Product_Intro"><br>
-							<span><?php echo $err_bname;?></span></td>
+							<td><input type="text" id="bname" name="bname" value="<?php echo $bname;?>" size="" placeholder="Product_Name"><br>
+							<span id="err_bname"><?php echo $err_bname;?></span></td>
 					    </tr>
 						
 					     <tr>
 					         <td><span><b>Payment</b></span></td>
-					         <td><input type="radio"  name="cname" value="<?php echo "Bksash";?>"> <span>Bksash</span>
-					         <input type="radio"  name="cname" value="<?php echo "Nagad";?>"> <span>Nagad</span>
-							 <input type="radio"  name="cname" value="<?php echo "Rocket";?>"> <span>Rocket</span>
-							 <br> <span> <?php echo $err_cname;?></span></td>
+					         <td><input type="radio" id="Bksash" name="cname" value="<?php echo "Bksash";?>"> <span>Bksash</span>
+					         <input type="radio" id="Nagad" name="cname" value="<?php echo "Nagad";?>"> <span>Nagad</span>
+							 <input type="radio" id="Rocket" name="cname" value="<?php echo "Rocket";?>"> <span>Rocket</span>
+							 <br> <span id="err_cname"> <?php echo $err_cname;?></span></td>
 				  	   </tr>
 					   
 					   <tr>
 				           <td><span><b>Address:</b></span></td>
-					       <td><input type="text" name="content" value="<?php echo $content;?>" placeholder="Product Content"><br>
-						    <span><?php echo $err_content;?></span></td>
+					       <td><input type="text" id="content" name="content" value="<?php echo $content;?>" placeholder="Address"><br>
+						    <span id="err_content" ><?php echo $err_content;?></span></td>
 			          </tr>
 				      
 					    <tr>
@@ -153,6 +154,52 @@ html {
              </form>
 			 <div>
 	
+	 <script>
+				function get(id){
+					return document.getElementById(id);
+				}
+			
+			
+				function validate(){
+					cleanUp();
+					var hasError=false;
+					if(get("bname").value == ""){
+						get("bname").focus();
+						get("err_bname").innerHTML="Please Enter Product Name";
+						get("err_bname").style.color="Red";
+						hasError=true;
+					}
+					
+				    if(get("Bksash").checked == false && get("Nagad").checked == false &&  get("Rocket").checked == false){
+						//get("cname").focus();
+						get("err_cname").innerHTML="Payment Method Required";
+						get("err_cname").style.color="Red";
+						hasError=true;
+					}
+					if(get("content").value == ""){
+						get("content").focus();
+						get("err_content").innerHTML="Address Content";
+						get("err_content").style.color="Red";
+						hasError=true;
+					} 
+					
+					if(!hasError){
+						return true;
+					}
+					return false;
+					
+				}
+				function cleanUp(){
+				
+					get("err_bname").innerHTML="";
+					get("err_cname").innerHTML="";
+					get("err_content").innerHTML="";
+					
+				}
+	    </script>
+		 </body>
+		 
+</html>
 		 </body>
 		 
 </html>

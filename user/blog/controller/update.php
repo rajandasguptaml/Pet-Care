@@ -132,14 +132,14 @@ html {
 			           tr>
 					        <td><span><b>Review Topic:</b></span></td>
 							
-							<td><input type="text" name="bname" value="<?php echo $bname;?>" size="" placeholder="Blog_Intro"><br>
+							<td><input type="text" name="bname" value="<?php echo $review["bname"] ;?>" size="" placeholder="Blog_Intro"><br>
 							<span><?php echo $err_bname;?></span></td>
 					    </tr>
 				   
 					   
 					   <tr>
 				           <td><span><b>Review Content:</b></span></td>
-					       <td><input type="text" name="content" value="<?php echo $content;?>" placeholder="Blog Content"><br>
+					       <td><input type="text" name="content" value="<?php echo $review["content"] ;?>" placeholder="Blog Content"><br>
 						    <span><?php echo $err_content;?></span></td>
 			          </tr>
 					  
