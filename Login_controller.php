@@ -20,53 +20,7 @@
 		return false;
 	}
 		
-	/*function validPass($password)
-	 {
-		 $hasUpper=false;
-		 $hasLower=false;
-		 $hasNum=false;
-		 $hasQM=false;
-		 $hasHash=false;
-		
-		for($i=0; $i<strlen($password);$i++)
-	     {
-			 if(ctype_upper($password[$i]))
-			 {
-				 $hasUpper=true;
-			 }
-			 
-			 if(ctype_lower($password[$i]))
-			 {
-				 $hasLower=true;
-			 }
-			 if($password[$i] >='0' && $password[$i]<='9')
-			 {
-                 $hasNum=true;
-                
-             }
-			 
-		     if($password[$i]=='#')
-			 {
-                 $hasHash=true;
-                
-             }
-              if($password[$i]=='?')
-			  {
-                  $hasQM=true;
-                
-                }
-                
-                if($hasUpper && $hasLower && $hasHash || $hasQM && $hasNum)
-				{
-                    return true;
-                }
-            
-            }
-            return false;
-            
-            
-            
-        }*/
+	
 	
 		if (isset($_POST["sign_up"])){
 			if (empty($_POST["username"])){
@@ -95,27 +49,7 @@
 			{
 				$password = $_POST["password"] ;
 			}
-			/*if(empty($_POST["password"]))
-		    {
-			$err_password="Password Required";
-			$hasError=true;
-		    }
-			elseif(strlen($_POST["password"])<8)
-			{
-                $err_password="Password must be at least 8 characters";
-				$hasError=true;
-            }
 			
-		    elseif(!validPass($_POST["password"]))
-		   {
-
-			$err_password="Password Must Contain 1 Uppercase,1 Lowercase, 1 Number & (# or ?)";
-			$hasError=true;
-		    }
-		     else
-		     {
-			$password=$_POST["password"];
-		     }*/
 		
 			if (empty($_POST["email"])){
 				$err_email="Email Required";
@@ -251,5 +185,13 @@ function authentication($email,$password)
         return false ;   
     }	
 	
+	function checkUsernamee($username){
+		$query = "select * from user where bname='$username'";
+		$result=get($query);
+		if(count($result) > 0){
+			return "false";
+		}
+		return "true";
+	}
 	
 ?>

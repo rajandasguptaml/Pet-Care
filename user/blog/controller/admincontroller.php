@@ -39,7 +39,7 @@
              
             insertCustomer($bname,$content); 
 	}
-	//Insert
+
     function insertCustomer($bname,$content)
     {
         $query = "INSERT INTO review VALUES (NULL,'$bname','$content')" ;
@@ -47,7 +47,7 @@
         execute($query) ;
         header("Location: dash.php");
     }
-    //Update  
+   
 	if(isset($_POST["update_customer"])){
 		editCustomer($_POST["id"],$_POST["bname"],$_POST["content"]);
 	}
@@ -57,7 +57,7 @@
 		execute($query);
 		header("Location: dash.php");
 	}
-    //Delete
+   
 	if(isset($_POST["remove_customer"]))
 	{
 		deleteCustomer($_POST["id"]); 
@@ -69,7 +69,7 @@
 		execute($query);
 		header("Location: dash.php");
 	}
-	//View
+
     function getreview($id)
     {
         $query = "select * from review where id='$id'" ;
@@ -85,5 +85,14 @@
         $result = get($query) ;
         return $result ;
     }
+	
+	function checkUsernamee($bname){
+		$query = "select * from review where bname='$bname'";
+		$result=get($query);
+		if(count($result) > 0){
+			return "false";
+		}
+		return "true";
+	}
     
 ?>

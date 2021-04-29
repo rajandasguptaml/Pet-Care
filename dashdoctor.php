@@ -166,35 +166,35 @@ html {
 			<table> 
 				<tr>
 					<td> <h5>1.POST-1</h5> </td>
-					<td><p><a href=".\doctor\medicine\controller\dash.php"  class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\petcareblog\controller\dash.php"  class="but">EDIT</a> </td></p>
 					
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>2.POST-2</h5> </td>
-					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\petcareblog\controller\dash.php" class="but">EDIT</a> </td></p>
 				
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>3.POST-3</h5> </td>
-					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\petcareblog\controller\dash.php" class="but">EDIT</a> </td></p>
 			
 					
 				</tr> 
 			
 				<tr>
 					<td> <h5>4.POST-4 </h5> </td>
-					<td><p><a href=".\doctor\medicine\controller\dash.php" class="but">EDIT</a> </td></p>
+					<td><p><a href=".\doctor\petcareblog\controller\dash.php" class="but">EDIT</a> </td></p>
 				
 			
 				</tr> 
 			</table>
         
 		</div>     
-       <p><a href=".\doctor\medicine\controller\addadmin.php" class="a"> ADD NEW</a></p>
+       <p><a href=".\doctor\petcareblog\controller\addadmin.php" class="a"> ADD NEW</a></p>
       </div>
     </div>
   </div>

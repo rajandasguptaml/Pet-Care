@@ -147,7 +147,7 @@
 		     }
             insertCustomer($fname,$lname,$username,$gender,$email,$address,$number,$about); 
 	}
-	//Insert
+
     function insertCustomer($fname,$lname,$username,$gender,$email,$address,$number,$about)
     {
         $query = "INSERT INTO customer VALUES (NULL,'$fname','$lname','$username','$gender','$email','$address','$number','$about')" ;
@@ -155,7 +155,7 @@
         execute($query) ;
         header("Location: dash.php");
     }
-    //Update  
+ 
 	if(isset($_POST["update_customer"])){
 		editCustomer($_POST["id"],$_POST["fname"],$_POST["lname"],$_POST["username"],$_POST["gender"],$_POST["email"],$_POST["address"],$_POST["number"],$_POST["about"]);
 	}
@@ -165,7 +165,7 @@
 		execute($query);
 		header("Location: dash.php");
 	}
-    //Delete
+
 	if(isset($_POST["remove_customer"]))
 	{
 		deleteCustomer($_POST["id"]); 
@@ -177,7 +177,7 @@
 		execute($query);
 		header("Location: dash.php");
 	}
-	//View
+
     function getCustomers($id)
     {
         $query = "select * from customer where id='$id'" ;
@@ -193,5 +193,23 @@
         $result = get($query) ;
         return $result ;
     }
+	
+	function checkUsernamee($username){
+		$query = "select * from customer where username='$username'";
+		$result=get($query);
+		if(count($result) > 0){
+			return "false";
+		}
+		return "true";
+	}
     
+	 function checkemaill($email){
+		$query = "select * from customer where email='$email'";
+		$result=get($query);
+		if(count($result) > 0){
+			return "false";
+		}
+		return "true";
+	}
+	
 ?>

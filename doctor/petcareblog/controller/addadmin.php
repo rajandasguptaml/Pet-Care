@@ -63,14 +63,7 @@ html {
 
 
 .a {
-    
-  border: 1px solid black;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
-  background-color: lightblue;
-
+  border: none;
   outline: 0;
   display: inline-block;
   padding: 8px;
@@ -107,11 +100,9 @@ html {
 
 </style>
 
-
-
 <div id="dash"></div>
 <div class="dash-section">
-  <h1> ADD PRODUCT</h1> 
+  <h1> ADD TIPS</h1> 
 </div>
 
 
@@ -121,49 +112,40 @@ html {
 
 <html>
       <head>
-	  
 	  <title>Add </title>
 	      
 	  <head>
-	 
 	  
 	     <body>
 		 <div class="adduser-div">
 
 		<legend align="center"><h3>ADD</h3></legend>
 		 
-		     <form action="" method="post" onsubmit="return validate()">
+		    <form action="" method="post" onsubmit="return validate()">
 			   <table align="center">
 			          <tr>
-					        <td><span><b>Product Name:</b></span></td>
+					        <td><span><b>Tips Intro:</b></span></td>
 							
-							<td><input type="text" id="bname" name="bname" onfocusout="checkUsername(this)" value="<?php echo $bname;?>" size="" placeholder="Product_Intro"><br>
-							<span id="err_bname"><?php echo $err_bname;?></span></td>
+							<td><input type="text"id="bname"  name="bname" onfocusout="checkUsername(this)" value="<?php echo $bname;?>" size="" placeholder="Intro"><br>
+							<span id="err_bname" ><?php echo $err_bname;?></span></td>
 					    </tr>
 						
 					     <tr>
 					         <td><span><b>Catagory</b></span></td>
 					         <td><input type="radio" id="Food" name="cname" value="<?php echo "Food";?>"> <span>Food</span>
-					         <input type="radio" id="Health"  name="cname" value="<?php echo "Health";?>"> <span>Health</span>
-							 <input type="radio" id="Life Style"  name="cname" value="<?php echo "Life_Style";?>"> <span>Life Style</span>
+					         <input type="radio" id="Health" name="cname" value="<?php echo "Health";?>"> <span>Health</span>
+							 <input type="radio" id="Life Style" name="cname" value="<?php echo "Life_Style";?>"> <span>Life Style</span>
 							 <br> <span id="err_cname"> <?php echo $err_cname;?></span></td>
 				  	   </tr>
 					   
 					   <tr>
-					        <td><span><b>Product Price:</b></span></td>
-							
-							<td><input type="text" id="pname" name="pname" value="<?php echo $pname;?>" size="" placeholder="Product_Price"><br>
-							<span id="err_pname"><?php echo $err_pname;?></span></td>
-					    </tr>
-					   
-					   <tr>
-				           <td><span><b>Product Content:</b></span></td>
-					       <td><input type="text"  id="content" name="content" value="<?php echo $content;?>" placeholder="Product Content"><br>
+				           <td><span><b> Content:</b></span></td>
+					       <td><input type="text" id="content"  name="content" value="<?php echo $content;?>" placeholder=" Content"><br>
 						    <span id="err_content"><?php echo $err_content;?></span></td>
 			          </tr>
 				      
 					    <tr>
-				             <td><input type="submit" name="productpp" value="ADD"></td>
+				             <td><input type="submit" name="blogp" value="ADD"></td>
 				        </tr>    
 							
 					       
@@ -171,9 +153,10 @@ html {
              </form>
 			 <div>
 			 
-			 <script>
-			 
-			 function checkUsername(control)
+			 	 
+		<script>
+		
+					function checkUsername(control)
 					{
 						var bname = control.value;
 						
@@ -182,18 +165,18 @@ html {
 							if(this.readyState == 4 && this.status == 200){
 								var rsp = this.responseText;
 								if(rsp == "true"){
-									document.getElementById("err_bname").innerHTML = "<br>Valid Product Name";
+									document.getElementById("err_bname").innerHTML = "<br>Valid Tips Intro";
 									document.getElementById("err_bname").style.color = "green";
 								}
 								else{
 
-								    document.getElementById("err_bname").innerHTML = "<br>Not Valid Product Name";
+								    document.getElementById("err_bname").innerHTML = "<br>Not Valid Tips Intro";
 									document.getElementById("err_bname").style.color = "red";
 									
 								}
 							}
 						};
-						xhttp.open("GET","Checkproduct.php?bname="+bname,true);
+						xhttp.open("GET","Checkblog.php?bname="+bname,true);
 						xhttp.send();
 					} 
 					
@@ -208,29 +191,23 @@ html {
 					var hasError=false;
 					if(get("bname").value == ""){
 						get("bname").focus();
-						get("err_bname").innerHTML="Please Enter Product Name";
+						get("err_bname").innerHTML="Tips Information Required";
 						get("err_bname").style.color="Red";
 						hasError=true;
 					}
-				    if(get("pname").value == ""){
-						get("pname").focus();
-						get("err_pname").innerHTML="Product Price Required";
-						get("err_pname").style.color="Red";
+				    if(get("content").value == ""){
+						get("content").focus();
+						get("err_content").innerHTML="Content Required";
+						get("err_content").style.color="Red";
 						hasError=true;
 					}
 					
 				    if(get("Food").checked == false && get("Health").checked == false &&  get("Life Style").checked == false){
-						//get("cname").focus();
-						get("err_cname").innerHTML="Catagory Required";
+						get("err_cname").innerHTML="Please Select Catagory";
 						get("err_cname").style.color="Red";
 						hasError=true;
 					}
-					if(get("content").value == ""){
-						get("content").focus();
-						get("err_content").innerHTML="Product Content";
-						get("err_content").style.color="Red";
-						hasError=true;
-					} 
+					
 					
 					if(!hasError){
 						return true;
@@ -241,12 +218,12 @@ html {
 				function cleanUp(){
 				
 					get("err_bname").innerHTML="";
-					get("err_pname").innerHTML="";
-					get("err_cname").innerHTML="";
 					get("err_content").innerHTML="";
+					get("err_cname").innerHTML="";
+					
 					
 				}
 	    </script>
 		 </body>
-		 
+	
 </html>

@@ -54,7 +54,7 @@
         execute($query) ;
         header("Location: dash.php");
     }
- 
+
 	if(isset($_POST["update_customer"])){
 		editCustomer($_POST["id"],$_POST["bname"],$_POST["cname"],$_POST["content"]);
 	}
@@ -64,7 +64,7 @@
 		execute($query);
 		header("Location: dash.php");
 	}
-    
+
 	if(isset($_POST["remove_customer"]))
 	{
 		deleteCustomer($_POST["id"]); 

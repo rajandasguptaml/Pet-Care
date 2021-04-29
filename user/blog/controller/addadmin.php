@@ -128,7 +128,7 @@ html {
 			          <tr>
 					        <td><span><b>Review Topic:</b></span></td>
 							
-							<td><input type="text" id="bname" name="bname" value="<?php echo $bname ;?>" size="" placeholder="Blog_Intro"><br>
+							<td><input type="text" id="bname" name="bname" onfocusout="checkUsername(this)" value="<?php echo $bname ;?>" size="" placeholder="Blog_Intro"><br>
 							<span id="err_bname" ><?php echo $err_bname;?></span></td>
 					    </tr>
 				   
@@ -148,6 +148,32 @@ html {
              </form>
 			 <div>
 	 <script>
+				
+			function checkUsername(control)
+					{
+						var bname = control.value;
+						
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange=function(){
+							if(this.readyState == 4 && this.status == 200){
+								var rsp = this.responseText;
+								if(rsp == "true"){
+									document.getElementById("err_bname").innerHTML = "<br>Valid Review Topic";
+									document.getElementById("err_bname").style.color = "green";
+								}
+								else{
+
+								    document.getElementById("err_bname").innerHTML = "<br>Not Valid Review Topic";
+									document.getElementById("err_bname").style.color = "red";
+									
+								}
+							}
+						};
+						xhttp.open("GET","Checkblog.php?bname="+bname,true);
+						xhttp.send();
+					} 
+					
+				
 				function get(id){
 					return document.getElementById(id);
 				}

@@ -37,7 +37,6 @@
 		 
 	 }
 	 
-	  
 	 
 	 if(isset($_POST["customer"])){
 		
@@ -193,5 +192,25 @@
         $result = get($query) ;
         return $result ;
     }
+	
+	
+    function checkUsernamee($username){
+		$query = "select * from customer where username='$username'";
+		$result=get($query);
+		if(count($result) > 0){
+			return "false";
+		}
+		return "true";
+	}
+
+     function checkemaill($email){
+		$query = "select * from customer where email='$email'";
+		$result=get($query);
+		if(count($result) > 0){
+			return "false";
+		}
+		return "true";
+	}
+ 
     
 ?>

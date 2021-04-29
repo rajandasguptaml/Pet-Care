@@ -46,7 +46,7 @@
              
             insertCustomer($bname,$cname,$content); 
 	}
-	//Insert
+	
     function insertCustomer($bname,$cname,$content)
     {
         $query = "INSERT INTO addcart VALUES (NULL,'$bname','$cname','$content')" ;
@@ -54,7 +54,7 @@
         execute($query) ;
         header("Location: dash.php");
     }
-    //Update  
+    
 	if(isset($_POST["update_customer"])){
 		editCustomer($_POST["id"],$_POST["bname"],$_POST["cname"],$_POST["content"]);
 	}
@@ -64,7 +64,7 @@
 		execute($query);
 		header("Location: dash.php");
 	}
-    //Delete
+   
 	if(isset($_POST["remove_customer"]))
 	{
 		deleteCustomer($_POST["id"]); 
@@ -76,7 +76,7 @@
 		execute($query);
 		header("Location: dash.php");
 	}
-	//View
+	
     function getaddcart($id)
     {
         $query = "select * from addcart where id='$id'" ;
@@ -92,5 +92,14 @@
         $result = get($query) ;
         return $result ;
     }
+	
+	function checkUsernamee($bname){
+		$query = "select * from addcart where bname='$bname'";
+		$result=get($query);
+		if(count($result) > 0){
+			return "false";
+		}
+		return "true";
+	}
     
 ?>

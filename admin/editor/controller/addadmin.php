@@ -138,7 +138,7 @@ html {
 					   
 					   <tr>
 				           <td><span><b>Username:</b></span></td>
-					       <td><input type="text" id="username" name="username" value="<?php echo $username;?>" placeholder="Username"><br>
+					       <td><input type="text" id="username" name="username" onfocusout="checkUsername(this)" value="<?php echo $username;?>" placeholder="Username"><br>
 						    <span id="err_username"><?php echo $err_username;?></span></td>
 			          </tr>
 					  
@@ -151,7 +151,7 @@ html {
 					   
 						<tr>
 					        <td><span><b>Email:</b></span></td>
-							<td><input type="text" id="email" size="" name="email" value="<?php echo $email;?>" placeholder="Email"><br>
+							<td><input type="text" id="email" size=""  name="email" onfocusout="checkemail(this)" value="<?php echo $email;?>" placeholder="Email"><br>
 							<span id="err_email"><?php echo $err_email;?></span></td>
 					   </tr>
 					   <tr>
@@ -184,6 +184,55 @@ html {
              </form>
 			 <div>
 	<script>
+				
+				function checkUsername(control)
+					{
+						var username = control.value;
+						
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange=function(){
+							if(this.readyState == 4 && this.status == 200){
+								var responce = this.responseText;
+								if(responce == "true"){
+									document.getElementById("err_username").innerHTML = "<br>Valid Username";
+									document.getElementById("err_username").style.color = "green";
+								}
+								else{
+                                        document.getElementById("err_username").innerHTML = "<br>Not Valid Username";
+									    document.getElementById("err_username").style.color = "red";
+									
+								}
+							}
+						};
+						xhttp.open("GET","CheckUsername.php?username="+username,true);
+						xhttp.send();
+					}
+				
+				
+					function checkemail(control)
+					{
+						var email = control.value;
+						
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange=function(){
+							if(this.readyState == 4 && this.status == 200){
+								var respon = this.responseText;
+								if(respon == "true"){
+									document.getElementById("err_email").innerHTML = "<br>Valid Email";
+									document.getElementById("err_email").style.color = "green";
+								}
+								else{
+                                        document.getElementById("err_email").innerHTML = "<br>Not Valid Email";
+									    document.getElementById("err_email").style.color = "red";
+									
+								}
+							}
+						};
+						xhttp.open("GET","Checkemail.php?email="+email,true);
+						xhttp.send();
+					}
+				
+				
 				function get(id){
 					return document.getElementById(id);
 				}

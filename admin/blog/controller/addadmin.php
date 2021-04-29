@@ -126,7 +126,8 @@ html {
 			          <tr>
 					        <td><span><b>Blog Intro:</b></span></td>
 							
-							<td><input type="text"id="bname"  name="bname" value="<?php echo $bname;?>" size="" placeholder="Intro"><br>
+							<td><input type="text" id="bname"  name="bname" onfocusout="checkUsername(this)" value="<?php echo $bname;?>" size="" placeholder="Intro"><br>
+							
 							<span id="err_bname" ><?php echo $err_bname;?></span></td>
 					    </tr>
 						
@@ -155,6 +156,33 @@ html {
 			 
 			 	 
 		<script>
+		
+			function checkUsername(control)
+					{
+						var bname = control.value;
+						
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange=function(){
+							if(this.readyState == 4 && this.status == 200){
+								var rsp = this.responseText;
+								if(rsp == "true"){
+									document.getElementById("err_bname").innerHTML = "<br>Valid Blog Intro";
+									document.getElementById("err_bname").style.color = "green";
+								}
+								else{
+
+								    document.getElementById("err_bname").innerHTML = "<br>Not Valid Blog Intro";
+									document.getElementById("err_bname").style.color = "red";
+									
+								}
+							}
+						};
+						xhttp.open("GET","Checkblog.php?bname="+bname,true);
+						xhttp.send();
+					} 
+	        
+		
+		
 				function get(id){
 					return document.getElementById(id);
 				}

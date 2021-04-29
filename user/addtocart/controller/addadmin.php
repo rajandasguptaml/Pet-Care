@@ -127,7 +127,7 @@ html {
 			          <tr>
 					        <td><span><b>Product Name:</b></span></td>
 							
-							<td><input type="text" id="bname" name="bname" value="<?php echo $bname;?>" size="" placeholder="Product_Name"><br>
+							<td><input type="text" id="bname" name="bname"  onfocusout="checkUsername(this)" value="<?php echo $bname;?>" size="" placeholder="Product_Name"><br>
 							<span id="err_bname"><?php echo $err_bname;?></span></td>
 					    </tr>
 						
@@ -155,7 +155,36 @@ html {
 			 <div>
 	
 	 <script>
-				function get(id){
+				
+				function checkUsername(control)
+					{
+						var bname = control.value;
+						
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange=function(){
+							if(this.readyState == 4 && this.status == 200){
+								var rsp = this.responseText;
+								if(rsp == "true"){
+									document.getElementById("err_bname").innerHTML = "<br>Valid Product Name";
+									document.getElementById("err_bname").style.color = "green";
+								}
+								else{
+
+								    document.getElementById("err_bname").innerHTML = "<br>Not Valid Product Name";
+									document.getElementById("err_bname").style.color = "red";
+									
+								}
+							}
+						};
+						xhttp.open("GET","Checkproduct.php?bname="+bname,true);
+						xhttp.send();
+					} 
+	        
+					
+				
+				
+				function get(id)
+				{
 					return document.getElementById(id);
 				}
 			
@@ -171,7 +200,6 @@ html {
 					}
 					
 				    if(get("Bksash").checked == false && get("Nagad").checked == false &&  get("Rocket").checked == false){
-						//get("cname").focus();
 						get("err_cname").innerHTML="Payment Method Required";
 						get("err_cname").style.color="Red";
 						hasError=true;

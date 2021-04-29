@@ -55,7 +55,7 @@
              
             insertCustomer($bname,$cname,$pname,$content); 
 	}
-	//Insert
+
     function insertCustomer($bname,$cname,$pname,$content)
     {
         $query = "INSERT INTO productpp VALUES (NULL,'$bname','$cname','$pname','$content')" ;
@@ -63,7 +63,7 @@
         execute($query) ;
         header("Location: dash.php");
     }
-    //Update  
+ 
 	if(isset($_POST["update_customer"])){
 		editCustomer($_POST["id"],$_POST["bname"],$_POST["cname"],$_POST["pname"],$_POST["content"]);
 	}
@@ -73,7 +73,7 @@
 		execute($query);
 		header("Location: dash.php");
 	}
-    //Delete
+
 	if(isset($_POST["remove_customer"]))
 	{
 		deleteCustomer($_POST["id"]); 
@@ -85,7 +85,7 @@
 		execute($query);
 		header("Location: dash.php");
 	}
-	//View
+
     function getproductpp($id)
     {
         $query = "select * from productpp where id='$id'" ;
@@ -101,5 +101,14 @@
         $result = get($query) ;
         return $result ;
     }
+	
+	function checkUsernamee($bname){
+		$query = "select * from productpp where bname='$bname'";
+		$result=get($query);
+		if(count($result) > 0){
+			return "false";
+		}
+		return "true";
+	}
     
 ?>

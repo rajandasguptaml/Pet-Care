@@ -103,7 +103,7 @@ html {
 
 <div id="dash"></div>
 <div class="dash-section">
-  <h1>PRODUCT </h1> 
+  <h1>ADD TO CART</h1> 
 </div>
 
 <?php

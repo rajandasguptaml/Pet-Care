@@ -117,10 +117,7 @@ html {
     <head>
 	<title>ipool-Login</title>
 
-    	
-
-
-		
+  	
 	<div class="">
 	
 	
@@ -151,11 +148,7 @@ html {
       </div> 	
     </div>
    
-<!--<div class="container_full">
-	<div class="container">
-		
-	</div>
-</div>--->
+
 
 </div>
 
