@@ -1,5 +1,5 @@
 <?php
-   require_once 'db_config.php' ;		
+   require_once 'models/db_config.php' ;		
      $fname="";
 	 $err_fname="";
      $lname="";
