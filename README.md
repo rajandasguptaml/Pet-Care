@@ -1,2 +1,2 @@
-# WT_Project_Pet-Care
-This is a Web Technologies project using HTML5, CSS, PHP, JAVASCRIPT, AJAX.
+# Pet-Care
+The “PET CARE” is an pet related website which purpose is to provide information about pet, also provide medical advice from doctor, sell pet items through online. It is an interactive pet care solution providing users to buy fresh pet food and medicine items from online. The purpose of the website is to develop a web base site for people to buy fresh pet food and medicine items and get medical advice/suggestion who are love their pet and want to get food, medicine and medical advice at home
